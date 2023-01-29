@@ -1,0 +1,39 @@
+.header{
+   &__logo{
+    width: 4.5rem;
+    height: 4rem;
+   }
+    display: flex;
+    align-items: center;
+    align-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &__navigation{
+        
+        &--list{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 5rem;
+            list-style: none;
+            font-size: 2rem;
+        }
+
+        &--link:link,
+        &--link:visited{
+            font-weight: 400;
+            text-decoration: none;
+            list-style: none;
+            color: $color-primary;
+        }
+    }
+    &__line{
+        margin-top: 0.6rem;
+        color: $color-primary;
+    }
+}
+
+.link{
+    text-decoration: none;
+}

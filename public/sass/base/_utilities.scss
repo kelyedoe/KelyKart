@@ -1,0 +1,27 @@
+.buttons{
+    padding-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    
+    &__blue{
+        background-color: $color-secondary-light;
+        height: 5rem;
+        border-radius: 1rem;
+        border-color: #fff;
+        border-style: none;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #fff;
+        
+    }
+    &__orange{
+        border: 2rem solid #ff7730;
+        border-style: none;
+        border-color: $color-tertiary-light;
+        border-radius: 1rem;
+        //background-color: $color-tertiary-light;
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+}

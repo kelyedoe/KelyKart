@@ -1,0 +1,26 @@
+.box{
+    margin: 5rem;
+}
+.action{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    &__image{
+        width: 500px;
+        height: 100%;
+    }
+}
+
+.apprenez{
+    font-size: 7rem;
+    color: $color-secondary-light;
+    font-weight: 700;
+}
+.gratuit{
+    font-size: 5rem;
+    color: $color-primary;
+}
+.new{
+    font-size: 2.5rem;
+    color: $color-primary;
+}

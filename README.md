@@ -6,4 +6,5 @@ Je réalise cette maquette avec Figma: [Maquette de KelyKart](https://www.figma.
 
 Page d'accueil:
 
-![alt text](resources/images/maquette.png)
+
+<img src="resources/images/maquette.png" alt="drawing" width="300"/>

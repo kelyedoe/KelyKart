@@ -1,0 +1,25 @@
+/* This palette uses a dark blue as the primary color, which gives a professional and modern look. The light blue is used as an accent color to add a touch of freshness and energy. 
+White and gray are used as neutral colors to provide a clean and simple background. */
+
+
+$color-primary: #0D2E4B; //dark blue 
+
+$color-secondary-light: #00B0FF;
+$color-secondary-dark:#5643fa;
+
+$color-tertiary-light: #ff7730;
+$color-tertiary-dark:#5643fa;
+
+$color-grey-dark: #9E9E9E;
+
+$color-white:#fff;
+$color-black: #000;
+
+$color-grey-light-1: #f7f7f7;
+$color-primary-light:#7ed56f; //light green
+$color-primary-dark:#28b485; //dark green
+
+//Grid variables
+$grid-width: 114rem;
+$gutter-vertical: 8rem;
+$gutter-horizontal: 6rem;

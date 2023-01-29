@@ -1,0 +1,16 @@
+/* Sass abstracts folder */
+@import "abstracts/mixins";
+@import "abstracts/variables";
+@import "abstracts/functions";
+
+/* Sass Base folder */
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+/* style for layouts elements*/
+@import "layouts/header";
+@import "layouts/navigation";
+@import "layouts/grid";
+@import "layouts/action";
+@import "layouts/formations";
