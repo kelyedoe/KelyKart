@@ -71,7 +71,7 @@
                             <p>Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise</p>
                         </div>
                         <div class="formations__item--stats">
-                            120 Chapitres
+                            <span><ion-icon name="folder-open-outline"> </ion-icon>120 Chapitres</span>
                             <span><ion-icon name="time-outline"></ion-icon> 10 Heures.</span> 
                         </div>
                     </div>
@@ -91,7 +91,7 @@
                             <p>Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise</p>
                         </div>
                         <div class="formations__item--stats">
-                            120 Chapitres
+                            <span><ion-icon name="folder-open-outline"></ion-icon>120 Chapitres</span>
                             <span><ion-icon name="time-outline"></ion-icon> 10 Heures.</span> 
                         </div>
                     </div>
@@ -111,7 +111,7 @@
                             <p>Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise</p>
                         </div>
                         <div class="formations__item--stats">
-                            120 Chapitres
+                            <span><ion-icon name="folder-open-outline"></ion-icon>120 Chapitres</span>
                             <span><ion-icon name="time-outline"></ion-icon> 10 Heures.</span> 
                         </div>
                     </div>
@@ -131,16 +131,79 @@
                             <p>Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise</p>
                         </div>
                         <div class="formations__item--stats">
-                            120 Chapitres
+                            <span><ion-icon name="folder-open-outline"></ion-icon>120 Chapitres</span>
                             <span><ion-icon name="time-outline"></ion-icon> 10 Heures.</span> 
                         </div>
-                    </div>
-                        
+                    </div>                
                 </div>
-        </div>
-        
+        </div>        
     </section>
 
+{{-- section des categories --}}
+    
+    <section class="categorie">
+        <h3 class="categorie__header">Catégories</h3>
+        <div class=" row categories">
+            <div class=" categories__card">
+                <div class="categories__card--title">
+                    <a href="" class="link">
+                        <ion-icon name="mic-outline"></ion-icon>
+                        <span>Podcasts</span>
+                    </a>
+                </div>
+    
+                <div class="categories__card--content">
+                    <p>Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer le faux-texte dès qu'il est prêt</p>
+                </div>
+    
+                <div class="categories__card--footer">
+                    <a href="">
+                        <button class="categories__card--btn" type="button">Formations</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class=" categories__card">
+                <div class="categories__card--title">
+                    <a href="" class="link">
+                        <ion-icon name="terminal-outline"></ion-icon>
+                        <span>Formations</span>        
+                    </a>
+                </div>
+    
+                <div class="categories__card--content">
+                    <p>Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer le faux-texte dès qu'il est prêt</p>
+                </div>
+    
+                <div class="categories__card--footer">
+                    <a href="">
+                        <button class="categories__card--btn" type="button">Formations</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class=" categories__card">
+                <div class="categories__card--title">
+                    <a href="" class="link">
+                        <ion-icon name="pencil-outline"></ion-icon><span>Blog</span>
+                    </a>
+                </div>
+    
+                <div class="categories__card--content">
+                    <p>Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer le faux-texte dès qu'il est prêt</p>
+                </div>
+    
+                <div class="categories__card--footer">
+                    <a href="">
+                        <button class="categories__card--btn" type="button">Formations</button>
+                    </a>
+                </div>
+            </div>
+        </div>   
+        
+        
+    </section>
+{{-- Fin de section des categories --}}
 
 
 

@@ -200,3 +200,38 @@ body {
 .disponibles {
   font-size: 3rem;
   color: #ff7730; }
+
+.categorie__header {
+  font-size: 5rem;
+  color: #0D2E4B;
+  margin-left: 7rem; }
+
+.categories {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 6rem; }
+  .categories__card {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    margin-bottom: 1rem;
+    border: 2px solid #333;
+    border-radius: 1rem; }
+    .categories__card--title {
+      font-size: 3rem;
+      text-align: center;
+      margin: 2rem; }
+    .categories__card--content {
+      margin: 1rem;
+      font-size: 1.5rem; }
+    .categories__card--footer {
+      text-align: center;
+      margin-bottom: 1.7rem; }
+    .categories__card--btn {
+      background-color: #00B0FF;
+      border-color: #fff;
+      border-style: none;
+      border-radius: 0.5rem;
+      height: 4rem;
+      width: 9rem; }
