@@ -235,3 +235,54 @@ body {
       border-radius: 0.5rem;
       height: 4rem;
       width: 9rem; }
+
+.footer {
+  background-color: #0D2E4B;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem; }
+  .footer__retrouvez {
+    padding-top: 3rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr); }
+    .footer__retrouvez--header {
+      font-size: 2.5rem;
+      color: #fff; }
+    .footer__retrouvez--content {
+      font-size: 1rem;
+      color: #fff; }
+    .footer__retrouvez--medias {
+      margin: 2rem;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      color: #fff; }
+    .footer__retrouvez--icon {
+      width: 2.5rem;
+      height: 2.5rem; }
+  .footer__contactez {
+    padding-top: 3rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr); }
+    .footer__contactez--logo {
+      text-align: center;
+      width: 3rem;
+      height: 3rem; }
+    .footer__contactez--header {
+      color: #fff;
+      font-size: 2.5rem;
+      text-align: center; }
+    .footer__contactez--content {
+      color: #fff;
+      font-size: 1rem;
+      text-align: center; }
+    .footer__contactez--medias {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      text-align: center;
+      color: #fff; }
+  .footer__logo {
+    text-align: center; }
