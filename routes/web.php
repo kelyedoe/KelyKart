@@ -20,6 +20,9 @@ Route::get('/', function () {
 Route::get('formations', function(){
     return view('visiteurs.formation-page');
 });
+Route::get('formations/intro', function(){
+    return view('visiteurs.formation-presentation');
+});
 
 Route::get('podcasts', function(){
     return view('visiteurs.podcast-page');
@@ -28,3 +31,5 @@ Route::get('podcasts', function(){
 Route::get('blog', function(){
     return view('visiteurs.blog-page');
 });
+
+
