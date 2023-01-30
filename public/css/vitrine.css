@@ -240,7 +240,8 @@ body {
   background-color: #0D2E4B;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 2rem; }
+  gap: 2rem;
+  width: 100%; }
   .footer__retrouvez {
     padding-top: 3rem;
     padding-right: 3rem;
@@ -286,3 +287,42 @@ body {
       color: #fff; }
   .footer__logo {
     text-align: center; }
+
+/* style for pages elements*/
+.formation-page {
+  padding: 7rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem; }
+  .formation-page__title {
+    grid-column: 1/3;
+    color: #0D2E4B; }
+    .formation-page__title--span {
+      color: #00B0FF; }
+    .formation-page__title--header {
+      font-size: 4rem;
+      font-weight: 700; }
+    .formation-page__title--description {
+      font-size: 1.5rem;
+      color: #0D2E4B; }
+  .formation-page__content {
+    border-radius: 5px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    border: 5px solid #D9D9D9;
+    background-color: #F0EEEE; }
+    .formation-page__content--image {
+      width: 50px;
+      height: 50px;
+      background-color: #00B0FF; }
+    .formation-page__content--titre {
+      font-size: 2.3rem;
+      font-weight: 500; }
+    .formation-page__content--description {
+      font-size: 1rem; }
+    .formation-page__content--footer {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-top: 2rem; }
