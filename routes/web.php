@@ -20,3 +20,11 @@ Route::get('/', function () {
 Route::get('formations', function(){
     return view('visiteurs.formation-page');
 });
+
+Route::get('podcasts', function(){
+    return view('visiteurs.podcast-page');
+});
+
+Route::get('blog', function(){
+    return view('visiteurs.blog-page');
+});

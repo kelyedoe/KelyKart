@@ -157,7 +157,8 @@ body {
   color: #0D2E4B; }
 
 .formations {
-  padding: 5rem; }
+  padding: 5rem;
+  text-decoration: none; }
   .formations__header {
     padding: 4rem; }
   .formations__list {

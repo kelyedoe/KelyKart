@@ -7,6 +7,7 @@
                 <span class="apprenez">Apprenez</span> <br> <span class="new">de nouvelles choses</span> <br> <span class="gratuit">Gratuitement.</span>
 
                 <div class="row buttons">
+                    
                     <button class="buttons__blue" type="button">Formations</button>
                     <button class="buttons__orange" type="button">Blog</button>
                 </div>
@@ -132,7 +133,7 @@
 
             <div class=" categories__card">
                 <div class="categories__card--title">
-                    <a href="" class="link">
+                    <a href="{{ asset('formations') }}" class="link">
                         <ion-icon name="terminal-outline"></ion-icon>
                         <span>Formations</span>        
                     </a>
