@@ -106,7 +106,8 @@
                 
             </div>
 
-
+            <div class="section__tutoriel--text">
+                    
             <div class="tutoriel__text">
                 <div class="tutoriel__text--title">
                     Tutoriel : Les routes en laravel
@@ -147,6 +148,22 @@
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem eligendi optio consectetur nemo, dolorum qui facere odit quo in tempore delectus quis aut cupiditate, magnam officiis. Aut magni voluptatum quos!
                     </p>
                 </div>
+            </div>
+
+            <div class="tutoriel__details">
+
+                <hr class="tutoriel__details--line">
+
+                <div class="tutoriel__details--auteur">
+                    <div class="tutoriel__details--image"></div>
+                    <div class="tutoriel__details--content">
+                        <div class="auteur"> Auteur: </div>
+                        <div class="auteur__nom">
+                             KelyKart
+                        </div>
+                    </div>
+                </div>
+            </div>
             </div>
             
         </div>

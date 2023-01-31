@@ -471,7 +471,8 @@ body {
   font-size: 1.5rem; }
 
 .tutoriel__text {
-  margin: 2rem; }
+  margin: 2rem;
+  grid-column: 1/4; }
   .tutoriel__text--title {
     font-size: 2rem;
     font-weight: 700;
@@ -485,4 +486,37 @@ body {
 .intro__content {
   padding-left: 3rem;
   font-size: 1.4rem;
+  color: #0D2E4B;
+  text-align: justify; }
+
+.section__tutoriel--text {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); }
+
+.tutoriel__details--line {
+  color: #00B0FF;
+  width: 100%;
+  text-align: center; }
+
+.tutoriel__details--auteur {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); }
+
+.tutoriel__details--image {
+  background-color: #0D2E4B;
+  margin: 3rem;
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  text-align: center; }
+
+.auteur {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #0D2E4B;
+  padding-top: 4rem; }
+
+.auteur__nom {
+  font-size: 1.6rem;
+  font-weight: 500;
   color: #0D2E4B; }

@@ -70,6 +70,7 @@
 .tutoriel__text{
 
     margin: 2rem;
+    grid-column: 1/4;
 
     &--title{
         font-size: 2rem;
@@ -91,5 +92,48 @@
 .intro__content{
     padding-left: 3rem;
     font-size: 1.4rem;
+    color: $color-primary;
+    text-align: justify;
+}
+
+.section__tutoriel--text{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.tutoriel__details{
+
+    &--line{
+        color: $color-secondary-light;
+        width: 100%;
+        text-align: center;
+    }
+    &--auteur{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        
+
+    }
+    &--image{
+        background-color: $color-primary;
+        margin: 3rem;
+        height: 90px;
+        width: 90px;
+        border-radius: 50%;
+        text-align: center;
+        
+
+    }
+}
+
+.auteur{
+    font-size: 2rem;
+    font-weight: 600;
+    color: $color-primary;
+    padding-top: 4rem;
+}
+.auteur__nom{
+    font-size: 1.6rem;
+    font-weight: 500;
     color: $color-primary;
 }
