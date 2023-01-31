@@ -13,7 +13,9 @@
                     </p>
                 </div>
                 <div class="formation-page__content">
-                    <div class="formation-page__content--image"></div>
+                    <div class="formation-page__content--image">
+                        <img src="{{asset('images/laravelform.png')}}" class="formation-page__content--image" alt="">
+                    </div>
                     <div class="formation-page__content--titre"> <a href="{{asset('formations/intro')}}" class="formation-page__content--link">Apprendre Laravel</a></div>
                     <div class="formation-page__content--description">
                         <p>
@@ -30,8 +32,10 @@
                 </div>
                 
                 <div class="formation-page__content">
-                    <div class="formation-page__content--image"></div>
-                    <div class="formation-page__content--titre">Node Js</div>
+                    <div class="formation-page__content--image">
+                        <img src="{{asset('images/phpform.png')}}" class="formation-page__content--image" alt="">
+                    </div>
+                    <div class="formation-page__content--titre">Apprendre php</div>
                     <div class="formation-page__content--description">
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, alia.
@@ -47,7 +51,9 @@
                 </div>
 
                 <div class="formation-page__content">
-                    <div class="formation-page__content--image"></div>
+                    <div class="formation-page__content--image">
+                        <img src="{{asset('images/tensorform.png')}}" class="formation-page__content--image" alt="">
+                    </div>
                     <div class="formation-page__content--titre">Tensorflow</div>
                     <div class="formation-page__content--description">
                         <p>
@@ -62,41 +68,11 @@
                             <span><ion-icon name="time-outline"></ion-icon> 10 Heures.</span>
                     </div>
                 </div>
+               
                 <div class="formation-page__content">
-                    <div class="formation-page__content--image"></div>
-                    <div class="formation-page__content--titre">Statistics</div>
-                    <div class="formation-page__content--description">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, alia.
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, alia.
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, alia.
-                        </p>
+                    <div class="formation-page__content--image">
+                        <img src="{{asset('images/htmlform.png')}}" class="formation-page__content--image" alt="">
                     </div>
-                    
-                    <div class="formation-page__content--footer">
-                            <span><ion-icon name="folder-open-outline"></ion-icon> 120 Chapitres</span>
-                            <span><ion-icon name="time-outline"></ion-icon> 10 Heures.</span>
-                    </div>
-                </div>
-                <div class="formation-page__content">
-                    <div class="formation-page__content--image"></div>
-                    <div class="formation-page__content--titre">Algèbre linéaire</div>
-                    <div class="formation-page__content--description">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, alia.
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, alia.
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, alia.
-                        </p>
-                    </div>
-                    
-                    <div class="formation-page__content--footer">
-                            <span><ion-icon name="folder-open-outline"></ion-icon> 120 Chapitres</span>
-                            <span><ion-icon name="time-outline"></ion-icon> 10 Heures.</span>
-                    </div>
-                </div>
-
-                <div class="formation-page__content">
-                    <div class="formation-page__content--image"></div>
                     <div class="formation-page__content--titre">Apprendre le HTML</div>
                     <div class="formation-page__content--description">
                         <p>
@@ -113,7 +89,9 @@
                 </div>
 
                 <div class="formation-page__content">
-                    <div class="formation-page__content--image"></div>
+                    <div class="formation-page__content--image">
+                        <img src="{{asset('images/sassform.png')}}" class="formation-page__content--image" alt="">
+                    </div>
                     <div class="formation-page__content--titre">Sass</div>
                     <div class="formation-page__content--description">
                         <p>
@@ -130,8 +108,10 @@
                 </div>
 
                 <div class="formation-page__content">
-                    <div class="formation-page__content--image"></div>
-                    <div class="formation-page__content--titre">Apprendre Laravel</div>
+                    <div class="formation-page__content--image">
+                        <img src="{{asset('images/gitform.png')}}" class="formation-page__content--image" alt="">
+                    </div>
+                    <div class="formation-page__content--titre">Apprendre git</div>
                     <div class="formation-page__content--description">
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, alia.
@@ -145,23 +125,7 @@
                             <span><ion-icon name="time-outline"></ion-icon> 10 Heures.</span>
                     </div>
                 </div>
-
-                <div class="formation-page__content">
-                    <div class="formation-page__content--image"></div>
-                    <div class="formation-page__content--titre">Apprendre Laravel</div>
-                    <div class="formation-page__content--description">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, alia.
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, alia.
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, alia.
-                        </p>
-                    </div>
-                    
-                    <div class="formation-page__content--footer">
-                            <span><ion-icon name="folder-open-outline"></ion-icon> 120 Chapitres</span>
-                            <span><ion-icon name="time-outline"></ion-icon> 10 Heures.</span>
-                    </div>
-                </div>
+               
         </section>
         
     @endsection

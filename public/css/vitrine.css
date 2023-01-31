@@ -319,8 +319,7 @@ body {
       color: #0D2E4B; }
     .formation-page__content--image {
       width: 50px;
-      height: 50px;
-      background-color: #00B0FF; }
+      height: 50px; }
     .formation-page__content--titre {
       font-size: 2.3rem;
       font-weight: 500; }
@@ -505,8 +504,8 @@ body {
 .tutoriel__details--image {
   background-color: #0D2E4B;
   margin: 3rem;
-  height: 90px;
-  width: 90px;
+  height: 60px;
+  width: 60px;
   border-radius: 50%;
   text-align: center; }
 

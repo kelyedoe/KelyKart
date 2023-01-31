@@ -13,7 +13,9 @@
                     </p>
                 </div>
                 <div class="formation-page__content">
-                    <div class="formation-page__content--image"></div>
+                    <div class="formation-page__content--image">
+                        <img src="{{asset('images/micro.png')}}" class="formation-page__content--image" alt="">
+                    </div>
                     <div class="formation-page__content--titre">avec Jeff Bezos</div>
                     <div class="formation-page__content--description">
                         <p>
@@ -30,7 +32,9 @@
                 </div>
                 
                 <div class="formation-page__content">
-                    <div class="formation-page__content--image"></div>
+                    <div class="formation-page__content--image">
+                        <img src="{{asset('images/micro.png')}}" class="formation-page__content--image" alt="">
+                    </div>
                     <div class="formation-page__content--titre">Le Big data</div>
                     <div class="formation-page__content--description">
                         <p>
@@ -47,7 +51,9 @@
                 </div>
 
                 <div class="formation-page__content">
-                    <div class="formation-page__content--image"></div>
+                    <div class="formation-page__content--image">
+                        <img src="{{asset('images/micro.png')}}" class="formation-page__content--image" alt="">
+                    </div>
                     <div class="formation-page__content--titre">avec Grafikart</div>
                     <div class="formation-page__content--description">
                         <p>
@@ -65,7 +71,9 @@
 
 
                 <div class="formation-page__content">
-                    <div class="formation-page__content--image"></div>
+                    <div class="formation-page__content--image">
+                        <img src="{{asset('images/micro.png')}}" class="formation-page__content--image" alt="">
+                    </div>
                     <div class="formation-page__content--titre">avec Elon Musk</div>
                     <div class="formation-page__content--description">
                         <p>
@@ -82,7 +90,9 @@
                 </div>
 
                 <div class="formation-page__content">
-                    <div class="formation-page__content--image"></div>
+                    <div class="formation-page__content--image">
+                        <img src="{{asset('images/micro.png')}}" class="formation-page__content--image" alt="">
+                    </div>
                     <div class="formation-page__content--titre">avec Yann LeCun</div>
                     <div class="formation-page__content--description">
                         <p>
@@ -99,7 +109,9 @@
                 </div>
 
                 <div class="formation-page__content">
-                    <div class="formation-page__content--image"></div>
+                    <div class="formation-page__content--image">
+                        <img src="{{asset('images/micro.png')}}" class="formation-page__content--image" alt="">
+                    </div>
                     <div class="formation-page__content--titre">Andrew Ng</div>
                     <div class="formation-page__content--description">
                         <p>
