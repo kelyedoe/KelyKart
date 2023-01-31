@@ -33,14 +33,14 @@
 
                     <div class="formations__text">
                         <div class="formations__item--titre">
-                            Apprendre Laravel
+                            <a href="{{asset('formations/intro')}}" class="formation-page__content--link">Apprendre Laravel</a>
                         </div>
                         <div class="formations__item--description">
                             <p>Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise</p>
                         </div>
                         <div class="formations__item--stats">
-                            <span><ion-icon name="folder-open-outline"> </ion-icon>120 Chapitres</span>
-                            <span><ion-icon name="time-outline"></ion-icon> 10 Heures.</span> 
+                            <a href="{{asset('formations/intro')}}" class="formation-page__content--link"><span><ion-icon name="folder-open-outline"> </ion-icon>120 Chapitres</span></a>
+                            <a href="{{asset('formations/intro')}}" class="formation-page__content--link"><span><ion-icon name="time-outline"></ion-icon> 10 Heures.</span> </a>
                         </div>
                     </div>
                         
@@ -126,7 +126,7 @@
     
                 <div class="categories__card--footer">
                     <a href="">
-                        <button class="categories__card--btn" type="button">Formations</button>
+                        <button class="categories__card--btn" type="button">Suivre</button>
                     </a>
                 </div>
             </div>
@@ -145,7 +145,7 @@
     
                 <div class="categories__card--footer">
                     <a href="">
-                        <button class="categories__card--btn" type="button">Formations</button>
+                        <button class="categories__card--btn" type="button">DébuteZ</button>
                     </a>
                 </div>
             </div>
@@ -163,7 +163,7 @@
     
                 <div class="categories__card--footer">
                     <a href="">
-                        <button class="categories__card--btn" type="button">Formations</button>
+                        <button class="categories__card--btn" type="button">Nos articles</button>
                     </a>
                 </div>
             </div>

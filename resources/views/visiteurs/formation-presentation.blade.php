@@ -10,7 +10,7 @@
                 <div class="header__text--description"><p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of</p></div>
                 <div class="header__text--button">
                     <button class="header__btn">
-                        Commencer
+                        <a href="{{asset('formations/intro')}}" class="formation-page__content--link"><ion-icon name="play-circle-outline" class="chapitre__icon"></ion-icon> Commencer</a>
                     </button>
                 </div>
             </div>
@@ -27,7 +27,7 @@
                     <ul class="chapitre__list">
 
                         <li class="chapitre__link">
-                            <a href="" class="chapitre__link--anchor">
+                            <a href="{{asset('formations/tutoriel')}}" class="chapitre__link--anchor">
                                 <ion-icon name="play-circle-outline" class="chapitre__icon"></ion-icon>
                                     Introduction à Laravel (10min)
                             </a>

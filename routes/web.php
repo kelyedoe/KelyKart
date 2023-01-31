@@ -23,6 +23,9 @@ Route::get('formations', function(){
 Route::get('formations/intro', function(){
     return view('visiteurs.formation-presentation');
 });
+Route::get('formations/tutoriel', function(){
+    return view('visiteurs.tutoriel');
+});
 
 Route::get('podcasts', function(){
     return view('visiteurs.podcast-page');
