@@ -19,8 +19,13 @@ class User extends Authenticatable
      */
     protected $fillable = [
         'name',
+        'prpenom',
+        'username',
+        'profession',
+        'description',
+        'date_naissance',
         'email',
-        'password',
+        'password'   
     ];
 
     /**
@@ -41,4 +46,15 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    /**
+     * Get the tutoriels for the user.
+     * Un utilisateur peut creer plusieurs tutoriels
+     */
+    public function tutoriels()
+    {
+        return $this->hasMany(Tutoriel::class, 'user_id');
+    }
+
+     
 }

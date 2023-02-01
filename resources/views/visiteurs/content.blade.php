@@ -114,7 +114,7 @@
         <div class=" row categories">
             <div class=" categories__card">
                 <div class="categories__card--title">
-                    <a href="" class="link">
+                    <a href="{{asset('podcasts')}}"  class="link">
                         <ion-icon name="mic-outline"></ion-icon>
                         <span>Podcasts</span>
                     </a>
@@ -125,7 +125,7 @@
                 </div>
     
                 <div class="categories__card--footer">
-                    <a href="">
+                    <a href="{{asset('podcasts')}}">
                         <button class="categories__card--btn" type="button">Suivre</button>
                     </a>
                 </div>
@@ -144,7 +144,7 @@
                 </div>
     
                 <div class="categories__card--footer">
-                    <a href="">
+                    <a href="{{asset('formations')}}">
                         <button class="categories__card--btn" type="button">DébuteZ</button>
                     </a>
                 </div>
@@ -152,7 +152,7 @@
 
             <div class=" categories__card">
                 <div class="categories__card--title">
-                    <a href="" class="link">
+                    <a href="{{asset('blog')}}" class="link">
                         <ion-icon name="pencil-outline"></ion-icon><span>Blog</span>
                     </a>
                 </div>
@@ -162,7 +162,7 @@
                 </div>
     
                 <div class="categories__card--footer">
-                    <a href="">
+                    <a href="{{asset('blog')}}" >
                         <button class="categories__card--btn" type="button">Nos articles</button>
                     </a>
                 </div>
