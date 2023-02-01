@@ -25,5 +25,5 @@ class Formation extends Model
     public function tutoriel()
     {
         return $this->hasMany(Tutoriel::class, 'formation_id');
-    }
+    } 
 }

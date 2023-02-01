@@ -16,17 +16,17 @@ class Tutoriel extends Model
         'video_youtube',
         'video_duree',
         'formation_id',
-        'user_id'
+        'user_id' 
     ];
 
 
     /**
      * Retrouver la formation associée au tutoriel.
      */
-    public function formation()
+     public function formation()
     {
         return $this->hasOne(Formation::class, 'tutoriel_id');
-    }
+    } 
 
      /**
      * Retrouver l'admin associée au tutoriel.

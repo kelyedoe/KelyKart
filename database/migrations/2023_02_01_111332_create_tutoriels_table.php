@@ -22,15 +22,15 @@ return new class extends Migration
             $table->integer('video_duree');
             $table->timestamps();
             /** Ajouter formation_id en foreign key */
-            $table->foreignId('formation_id')
+          /*   $table->foreignId('formation_id')
             ->constrained()
             ->onUpdate('cascade')
-            ->onDelete('cascade');
+            ->onDelete('cascade'); */
             /** Ajouter user_id en foreign key */
-            $table->foreignId('user_id')
+           /*  $table->foreignId('user_id')
             ->constrained()
             ->onUpdate('cascade')
-            ->onDelete('cascade');
+            ->onDelete('cascade'); */
         });
     }
 

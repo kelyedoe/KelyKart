@@ -17,6 +17,8 @@ Route::get('/', function () {
     return view('visiteurs.content');
 });
 
+
+
 /*  Groupe de routes pour la section des formations */
 Route::group(['prefix'=>'formations'] , function(){
     Route::get('/', function(){
@@ -29,6 +31,8 @@ Route::group(['prefix'=>'formations'] , function(){
         return view('visiteurs.tutoriel');
     });
 });
+
+
 
 /*  Groupe de routes pour la section des podcasts */
 Route::group(['prefix'=>'podcasts'], function(){

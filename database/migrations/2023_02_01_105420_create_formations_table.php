@@ -20,13 +20,13 @@ return new class extends Migration
             $table->mediumText('presentation');
             $table->string('image_icon');
             $table->string('video_link_presentation');
-            $table->integer('total_chapitres');
-            $table->interger('total_duree');
+            $table->smallInteger('total_chapitres');
+            $table->smallInteger('total_duree');
             $table->timestamps();            
-            $table->foreignId('tutoriel_id')
+            /* $table->foreignId('tutoriel_id')
             ->constrained()
             ->onUpdate('cascade')
-            ->onDelete('cascade');
+            ->onDelete('cascade'); */
         });
     }
 

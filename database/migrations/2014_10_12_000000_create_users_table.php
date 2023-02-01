@@ -27,10 +27,10 @@ return new class extends Migration
             $table->rememberToken();
             $table->timestamps();
              /** Ajouter tutoriel_id en foreign key */
-             $table->foreignId('tutoriel_id')
+           /*   $table->foreignId('tutoriel_id')
              ->constrained()
              ->onUpdate('cascade')
-             ->onDelete('cascade');
+             ->onDelete('cascade'); */
         });
     }
 
