@@ -24,8 +24,6 @@ class FormationFactory extends Factory
             'video_link_presentation' => 'https://youtu.be/reUZRyXxUs4',
             'total_chapitres' => fake()->randomDigit(),
             'total_duree' => fake()->randomDigit(),
-
-
         ];
     }
 }

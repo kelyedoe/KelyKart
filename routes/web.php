@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -48,6 +49,15 @@ Route::group(['prefix'=>'blog'], function(){
     });
 });
 
+Route::get('test/formations', function(){
+    $formations = \App\Models\Formation::all();
+    return $formations;
+});
+
+Route::get('test/users', function(){
+    $users = \App\Models\User::all();
+    return view('visiteurs.test',['users'=>$users]);
+});
 
 
 
