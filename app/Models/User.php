@@ -25,8 +25,7 @@ class User extends Authenticatable
         'description',
         'date_naissance',
         'email',
-        'password',
-        'tutoriel_id'   
+        'password', 
     ];
 
     /**
@@ -55,7 +54,7 @@ class User extends Authenticatable
     public function tutoriels()
     {
         return $this->hasMany(Tutoriel::class, 'user_id');
-    }
+    } 
 
      
 }
