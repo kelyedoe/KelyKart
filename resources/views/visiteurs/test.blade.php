@@ -7,7 +7,7 @@
     <title>testing view</title>
 </head>
 <body>
-    <form action="formations" method="post">
+    <form action="ajouter" method="post">
         @csrf
         <input type="text" name="nom" placeholder="nom">
         <input type="text" name="description" placeholder="description">

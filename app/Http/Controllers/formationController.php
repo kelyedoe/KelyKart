@@ -9,6 +9,10 @@ use App\Models\Formation;
 
 class formationController extends Controller
 {
+    public function getAll_formations(){
+        $formations = \App\Models\Formation::all();
+        return view('visiteurs.formation-page', ['formations'=>$formations]);
+    }
     // Here goes all the conrollers for Formation class
     //show_form() function used to show the form
     public function show_form(){

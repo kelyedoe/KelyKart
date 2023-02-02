@@ -12,26 +12,31 @@
 
                     </p>
                 </div>
+                @foreach ($formations as $formation)
+
                 <div class="formation-page__content">
                     <div class="formation-page__content--image">
-                        <img src="{{asset('images/laravelform.png')}}" class="formation-page__content--image" alt="">
+                        <img src="images/{{$formation->image_icon}}" class="formation-page__content--image" alt="">
                     </div>
-                    <div class="formation-page__content--titre"> <a href="{{asset('formations/intro')}}" class="formation-page__content--link">Apprendre Laravel</a></div>
+                    <div class="formation-page__content--titre"> <a href="{{asset('formations/intro')}}" class="formation-page__content--link">{{$formation->nom}}</a></div>
                     <div class="formation-page__content--description">
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, alia.
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, alia.
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, alia.
+                            {{$formation->description}}
                         </p>
                     </div>
                     
                     <div class="formation-page__content--footer">
-                        <a href="{{asset('formations/intro')}}" class="formation-page__content--link"><span><ion-icon name="folder-open-outline"></ion-icon> 120 Chapitres</span></a>
-                        <a href="{{asset('formations/intro')}}" class="formation-page__content--link"><span><ion-icon name="time-outline"></ion-icon> 10 Heures.</span></a>
+                        <a href="{{asset('formations/intro')}}" class="formation-page__content--link"><span><ion-icon name="folder-open-outline"></ion-icon> {{$formation->total_chapitres}} Chapitres</span></a>
+                        <a href="{{asset('formations/intro')}}" class="formation-page__content--link"><span><ion-icon name="time-outline"></ion-icon> {{$formation->total_duree}} Heures.</span></a>
                     </div>
                 </div>
+
+                @endforeach
+
+
                 
-                <div class="formation-page__content">
+                
+             {{--    <div class="formation-page__content">
                     <div class="formation-page__content--image">
                         <img src="{{asset('images/phpform.png')}}" class="formation-page__content--image" alt="">
                     </div>
@@ -48,9 +53,9 @@
                             <span><ion-icon name="folder-open-outline"></ion-icon> 120 Chapitres</span>
                             <span><ion-icon name="time-outline"></ion-icon> 10 Heures.</span>
                     </div>
-                </div>
+                </div> --}}
 
-                <div class="formation-page__content">
+               {{--  <div class="formation-page__content">
                     <div class="formation-page__content--image">
                         <img src="{{asset('images/tensorform.png')}}" class="formation-page__content--image" alt="">
                     </div>
@@ -67,9 +72,9 @@
                             <span><ion-icon name="folder-open-outline"></ion-icon> 120 Chapitres</span>
                             <span><ion-icon name="time-outline"></ion-icon> 10 Heures.</span>
                     </div>
-                </div>
+                </div> --}}
                
-                <div class="formation-page__content">
+            {{--     <div class="formation-page__content">
                     <div class="formation-page__content--image">
                         <img src="{{asset('images/htmlform.png')}}" class="formation-page__content--image" alt="">
                     </div>
@@ -86,9 +91,9 @@
                             <span><ion-icon name="folder-open-outline"></ion-icon> 120 Chapitres</span>
                             <span><ion-icon name="time-outline"></ion-icon> 10 Heures.</span>
                     </div>
-                </div>
+                </div> --}}
 
-                <div class="formation-page__content">
+               {{--  <div class="formation-page__content">
                     <div class="formation-page__content--image">
                         <img src="{{asset('images/sassform.png')}}" class="formation-page__content--image" alt="">
                     </div>
@@ -105,9 +110,9 @@
                             <span><ion-icon name="folder-open-outline"></ion-icon> 120 Chapitres</span>
                             <span><ion-icon name="time-outline"></ion-icon> 10 Heures.</span>
                     </div>
-                </div>
+                </div> --}}
 
-                <div class="formation-page__content">
+              {{--   <div class="formation-page__content">
                     <div class="formation-page__content--image">
                         <img src="{{asset('images/gitform.png')}}" class="formation-page__content--image" alt="">
                     </div>
@@ -124,7 +129,7 @@
                             <span><ion-icon name="folder-open-outline"></ion-icon> 120 Chapitres</span>
                             <span><ion-icon name="time-outline"></ion-icon> 10 Heures.</span>
                     </div>
-                </div>
+                </div> --}}
                
         </section>
         

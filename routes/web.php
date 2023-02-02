@@ -14,24 +14,28 @@ use App\Http\Controllers\indexController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-/*  Route index de KelyKart */
+
 /* Route::get('/', function () {
     return view('visiteurs.content');
 }); */
 
+/*  Route index de KelyKart */
 Route::get('/', [indexController::class, 'getAll_formations']);
-
-
 
 /*  Groupe de routes pour la section des formations */
 Route::group(['prefix'=>'formations'] , function(){
-    Route::get('/', function(){
-        return view('visiteurs.formation-page');
-    });
+    
+    //All formations view
+    Route::get('/', [formationController::class, 'getAll_formations']);
+
     // this Function helps to add a new formation into the table
     Route::get('ajouter', [formationController::class, 'show_form']);
+    Route::post('ajouter', [formationController::class, 'create_formation']);
+    
+    //Update formation details
     Route::get('mettre-a-jour/{id}', [formationController::class, 'show_update_form']);
     Route::post('mettre-a-jour/{id}', [formationController::class, 'update_formation']);
+
 
     Route::get('intro', function(){
         return view('visiteurs.formation-presentation');
@@ -59,8 +63,6 @@ Route::group(['prefix'=>'blog'], function(){
 
 Route::get('test/{id}', [formationController::class, 'get']);
 Route::get('test/delete/{id}', [formationController::class, 'delete']);
-Route::get('test/formations/', [formationController::class, 'show_form']);
-Route::post('test/formations', [formationController::class, 'create_formation']);
 Route::get('test/users', function(){
     $users = \App\Models\User::all();
     return view('visiteurs.test',['users'=>$users]);
