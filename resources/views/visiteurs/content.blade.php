@@ -35,14 +35,14 @@
 
                     <div class="formations__text">
                         <div class="formations__item--titre">
-                            <a href="{{asset('formations/intro')}}" class="formation-page__content--link">{{$formation->nom}}</a>
+                            <a href="formations/introduction/{{$formation->id}}" class="formation-page__content--link">{{$formation->nom}}</a>
                         </div>
                         <div class="formations__item--description">
                             <p>{{$formation->description}}</p>
                         </div>
                         <div class="formations__item--stats">
-                            <a href="{{asset('formations/intro')}}" class="formation-page__content--link"><span><ion-icon name="folder-open-outline"> </ion-icon>{{$formation->total_chapitres}} Chapitres</span></a>
-                            <a href="{{asset('formations/intro')}}" class="formation-page__content--link"><span><ion-icon name="time-outline"></ion-icon> {{$formation->total_duree}} Heures.</span> </a>
+                            <a href="formations/introduction/{{$formation->id}}" class="formation-page__content--link"><span><ion-icon name="folder-open-outline"> </ion-icon>{{$formation->total_chapitres}} Chapitres</span></a>
+                            <a href="formations/introduction/{{$formation->id}}" class="formation-page__content--link"><span><ion-icon name="time-outline"></ion-icon> {{$formation->total_duree}} Heures.</span> </a>
                         </div>
                     </div>                   
                 </div>

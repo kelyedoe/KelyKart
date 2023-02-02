@@ -31,15 +31,13 @@ Route::group(['prefix'=>'formations'] , function(){
     // this Function helps to add a new formation into the table
     Route::get('ajouter', [formationController::class, 'show_form']);
     Route::post('ajouter', [formationController::class, 'create_formation']);
-    
+
     //Update formation details
     Route::get('mettre-a-jour/{id}', [formationController::class, 'show_update_form']);
     Route::post('mettre-a-jour/{id}', [formationController::class, 'update_formation']);
 
+    Route::get('introduction/{id}',[formationController::class, 'get_formation']);
 
-    Route::get('intro', function(){
-        return view('visiteurs.formation-presentation');
-    });
     Route::get('tutoriel', function(){
         return view('visiteurs.tutoriel');
     });

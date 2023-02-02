@@ -32,9 +32,9 @@ class formationController extends Controller
         $formation->save();
     }
     //get function to return a specific formation from the table formations
-    public function get($id){
+    public function get_formation($id){
         $result = \App\Models\Formation::findOrFail($id);
-        return $result;
+        return view('visiteurs.formation-presentation', ['result'=>$result]);
     }
     public function show_update_form($id){
         $result = \App\Models\Formation::findOrFail($id);

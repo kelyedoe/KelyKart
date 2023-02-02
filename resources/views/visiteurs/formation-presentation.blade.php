@@ -6,8 +6,12 @@
         </div>
         <section class="formation__introduction--header">
             <div class="header__text">
-                <div class="header__text--title">Apprendre le framework <br> laravel.</div>
-                <div class="header__text--description"><p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of</p></div>
+                <div class="header__text--title">{{$result->nom}}</div>
+                <div class="header__text--description">
+                    <p>
+                        {{$result->description}}
+                    </p>
+                </div>
                 <div class="header__text--button">
                     <button class="header__btn">
                         <a href="{{asset('formations/intro')}}" class="formation-page__content--link"><ion-icon name="play-circle-outline" class="chapitre__icon"></ion-icon> Commencer</a>
@@ -128,12 +132,10 @@
                 </div>
             </div>
             <div class="formation__presentation--view">
-                <div class="chapitre__title">Présentation</div>
+                <div class="chapitre__title">{{$result->nom}}</div>
 
                 <div class="chapitre__description">
-                    <p>Le lorem ipsum (également appelé faux-texte, lipsum, ou bolo bolo ) est, 
-                        en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page, le texte définitif 
-                        venant remplacer le faux-texte dès qu'il est prêt ou que la mise en page est achevée.</p>
+                    <p>{{$result->presentation}}</p>
                 </div>
 
                 <div class="chapitre__time">
@@ -141,7 +143,7 @@
                 </div>
 
                 <div class="chapitre__video">
-                    <iframe class="chapitre__video video--link" width="500" height="320" src="https://www.youtube.com/embed/reUZRyXxUs4">
+                    <iframe class="chapitre__video video--link" width="500" height="320" src="{{$result->video_link_presentation}}">
                     </iframe>
                 </div>
             </div>
