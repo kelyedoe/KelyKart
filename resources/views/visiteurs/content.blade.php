@@ -26,6 +26,8 @@
         </div>
         
         <div class="formations__list">
+
+            @foreach ($formations as $formation)
                 <div class="formations__item">
                     <div>
                         <img src="{{asset('images/laravel.png')}}" class="formations__item--image" alt="laravel">
@@ -33,20 +35,21 @@
 
                     <div class="formations__text">
                         <div class="formations__item--titre">
-                            <a href="{{asset('formations/intro')}}" class="formation-page__content--link">Apprendre Laravel</a>
+                            <a href="{{asset('formations/intro')}}" class="formation-page__content--link">{{$formation->nom}}</a>
                         </div>
                         <div class="formations__item--description">
-                            <p>Le lorem ipsum est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise</p>
+                            <p>{{$formation->description}}</p>
                         </div>
                         <div class="formations__item--stats">
-                            <a href="{{asset('formations/intro')}}" class="formation-page__content--link"><span><ion-icon name="folder-open-outline"> </ion-icon>120 Chapitres</span></a>
-                            <a href="{{asset('formations/intro')}}" class="formation-page__content--link"><span><ion-icon name="time-outline"></ion-icon> 10 Heures.</span> </a>
+                            <a href="{{asset('formations/intro')}}" class="formation-page__content--link"><span><ion-icon name="folder-open-outline"> </ion-icon>{{$formation->total_chapitres}} Chapitres</span></a>
+                            <a href="{{asset('formations/intro')}}" class="formation-page__content--link"><span><ion-icon name="time-outline"></ion-icon> {{$formation->total_duree}} Heures.</span> </a>
                         </div>
-                    </div>
-                        
+                    </div>                   
                 </div>
+            @endforeach
+                
 
-                <div class="formations__item">
+{{--                 <div class="formations__item">
                     <div>
                         <img src="{{asset('images/tensorflow.png')}}" class="formations__item--image" alt="laravel">
                     </div>
@@ -64,9 +67,9 @@
                         </div>
                     </div>
                         
-                </div>
+                </div> --}}
 
-                <div class="formations__item">
+          {{--       <div class="formations__item">
                     <div>
                         <img src="{{asset('images/php.png')}}" class="formations__item--image" alt="laravel">
                     </div>
@@ -84,9 +87,9 @@
                         </div>
                     </div>
                         
-                </div>
+                </div> --}}
 
-                <div class="formations__item">
+               {{--  <div class="formations__item">
                     <div>
                         <img src="{{asset('images/git.png')}}" class="formations__item--image" alt="laravel">
                     </div>
@@ -103,7 +106,7 @@
                             <span><ion-icon name="time-outline"></ion-icon> 10 Heures.</span> 
                         </div>
                     </div>                
-                </div>
+                </div> --}}
         </div>        
     </section>
 {{-- Formation Section End --}}

@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\formationController;
+use App\Http\Controllers\indexController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,9 +15,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 /*  Route index de KelyKart */
-Route::get('/', function () {
+/* Route::get('/', function () {
     return view('visiteurs.content');
-});
+}); */
+
+Route::get('/', [indexController::class, 'getAll_formations']);
 
 
 
@@ -25,6 +28,11 @@ Route::group(['prefix'=>'formations'] , function(){
     Route::get('/', function(){
         return view('visiteurs.formation-page');
     });
+    // this Function helps to add a new formation into the table
+    Route::get('ajouter', [formationController::class, 'show_form']);
+    Route::get('mettre-a-jour/{id}', [formationController::class, 'show_update_form']);
+    Route::post('mettre-a-jour/{id}', [formationController::class, 'update_formation']);
+
     Route::get('intro', function(){
         return view('visiteurs.formation-presentation');
     });
@@ -49,11 +57,10 @@ Route::group(['prefix'=>'blog'], function(){
     });
 });
 
-Route::get('test/formations', function(){
-    $formations = \App\Models\Formation::all();
-    return $formations;
-});
-
+Route::get('test/{id}', [formationController::class, 'get']);
+Route::get('test/delete/{id}', [formationController::class, 'delete']);
+Route::get('test/formations/', [formationController::class, 'show_form']);
+Route::post('test/formations', [formationController::class, 'create_formation']);
 Route::get('test/users', function(){
     $users = \App\Models\User::all();
     return view('visiteurs.test',['users'=>$users]);
