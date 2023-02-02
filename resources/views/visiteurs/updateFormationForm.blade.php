@@ -7,7 +7,7 @@
     <title>Update formation</title>
 </head>
 <body>
-    <form action="mettre-a-jour/{id}" method="post">
+    <form action="{{$result->id}}" method="post">
         @csrf
         <input type="text" name="nom" placeholder="nom" value="{{$result->nom}}">
         <input type="text" name="description" placeholder="description" value="{{$result->description}}">

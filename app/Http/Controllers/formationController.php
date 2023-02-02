@@ -37,16 +37,17 @@ class formationController extends Controller
         return view('visiteurs.updateFormationForm', ['result'=>$result]);
     }
     public function update_formation( Request $request, $id){
-        $formation = Formation::where('$id', $id);
-        $formation->update([
-            $formation->nom = $request->nom,
-            $formation->description = $request->description,
-            $formation->presentation = $request->presentation,
-            $formation->image_icon = $request->image_icon,
-            $formation->video_link_presentation = $request->video_link_presentation,
-            $formation->total_chapitres = $request->total_chapitres,
-            $formation->total_duree = $request->total_duree
-        ]);       
+        $formation = Formation::where('id', $id)
+        ->update([
+            'nom' => $request->nom,
+            'description' => $request->description,
+            'presentation' => $request->presentation,
+            'image_icon' => $request->image_icon,
+            'video_link_presentation' => $request->video_link_presentation,
+            'total_chapitres' => $request->total_chapitres,
+            'total_duree' => $request->total_duree
+        ]);  
+        return "Mise à jour avec succès";     
     }
 
     public function delete($id){
