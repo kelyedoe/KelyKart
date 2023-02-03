@@ -25,17 +25,21 @@ Route::get('/', [indexController::class, 'getAll_formations']);
 /*  Groupe de routes pour la section des formations */
 Route::group(['prefix'=>'formations'] , function(){
     
-    //All formations view
+    //Route pour afficher toutes les formations de la DB
     Route::get('/', [formationController::class, 'getAll_formations']);
 
-    // this Function helps to add a new formation into the table
+    //Routes pour ajouter une  nouvelle formation dans la DB
     Route::get('ajouter', [formationController::class, 'show_form']);
     Route::post('ajouter', [formationController::class, 'create_formation']);
 
-    //Update formation details
+    //Routes pour modifier les details d'une formation
     Route::get('mettre-a-jour/{id}', [formationController::class, 'show_update_form']);
     Route::post('mettre-a-jour/{id}', [formationController::class, 'update_formation']);
+    
+    //Route pour supprimer une formation de la DB
+    Route::get('supprimer/{id}', [formationController::class, 'delete']);
 
+    //Route pour accéder à l'introduction d'une formation
     Route::get('introduction/{id}',[formationController::class, 'get_formation']);
 
     Route::get('tutoriel', function(){
@@ -60,7 +64,6 @@ Route::group(['prefix'=>'blog'], function(){
 });
 
 Route::get('test/{id}', [formationController::class, 'get']);
-Route::get('test/delete/{id}', [formationController::class, 'delete']);
 Route::get('test/users', function(){
     $users = \App\Models\User::all();
     return view('visiteurs.test',['users'=>$users]);
@@ -73,3 +76,13 @@ Route::get('test/users', function(){
 
 
 
+
+Route::middleware([
+    'auth:sanctum',
+    config('jetstream.auth_session'),
+    'verified'
+])->group(function () {
+    Route::get('/dashboard', function () {
+        return view('dashboard');
+    })->name('dashboard');
+});

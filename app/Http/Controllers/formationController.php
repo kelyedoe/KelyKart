@@ -30,6 +30,7 @@ class formationController extends Controller
         $formation->total_chapitres = $request->total_chapitres;
         $formation->total_duree = $request->total_duree;
         $formation->save();
+        return "Formation crée avec succès";
     }
     //get function to return a specific formation from the table formations
     public function get_formation($id){
