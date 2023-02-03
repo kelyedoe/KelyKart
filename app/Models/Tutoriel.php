@@ -32,8 +32,8 @@ class Tutoriel extends Model
      * Retrouver l'admin associée au tutoriel.
      * Retrouver le créateur de la formation
      */
-    /* public function user()
+    public function user()
     {
         return $this->hasOne(User::class, 'tutoriel_id');
-    } */
+    } 
 }

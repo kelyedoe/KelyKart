@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\formationController;
+use App\Http\Controllers\tutorielController;
 use App\Http\Controllers\indexController;
 
 /*
@@ -47,9 +48,21 @@ Route::group(['prefix'=>'formations'] , function(){
     //Route pour accéder à l'introduction d'une formation
     Route::get('introduction/{id}',[formationController::class, 'get_formation']);
 
-    Route::get('tutoriel', function(){
+  /*   Route::get('tutoriel', function(){
         return view('visiteurs.tutoriel');
-    });
+    });  */
+});
+/**** Testing sur le model tutoriels ----- */
+Route::group(['prefix'=>'tutoriels'] , function(){
+    //AFficher toutes les tutoriels sous la formation
+    Route::get('/','App\Http\Controllers\tutorielController@getAll_tutoriels');
+
+    //AJouter un nouveau tutoriel sous une formation
+    Route::get('ajouter',[tutorielController::class, 'show_form']);
+    Route::post('ajouter',[tutorielController::class, 'create_tutoriel']);
+
+    //Afficher un tutoriel
+
 });
 
 
