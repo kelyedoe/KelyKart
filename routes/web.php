@@ -22,6 +22,11 @@ use App\Http\Controllers\indexController;
 /*  Route index de KelyKart */
 Route::get('/', [indexController::class, 'getAll_formations']);
 
+/** Backend level of kelykart */
+Route::get('backend', function(){
+    return view('welcome');
+});
+
 /*  Groupe de routes pour la section des formations */
 Route::group(['prefix'=>'formations'] , function(){
     
