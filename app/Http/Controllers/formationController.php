@@ -35,7 +35,8 @@ class formationController extends Controller
     //get function to return a specific formation from the table formations
     public function get_formation($id){
         $result = \App\Models\Formation::findOrFail($id);
-        return view('visiteurs.formation-presentation', ['result'=>$result]);
+        $tutoriels = Formation::find($id)->tutoriel()->get();
+        return view('visiteurs.formation-presentation', ['result'=>$result, 'tutoriels'=>$tutoriels]);
     }
     public function show_update_form($id){
         $result = \App\Models\Formation::findOrFail($id);

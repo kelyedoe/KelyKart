@@ -25,7 +25,7 @@
 {{-- Main content End --}}
 {{-- Debut du footer --}}
 
-<footer class="footer row">    
+<footer class="footer">    
     @include('visiteurs.footer')
 </footer>
 

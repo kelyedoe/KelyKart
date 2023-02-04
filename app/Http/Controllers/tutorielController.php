@@ -10,6 +10,7 @@ class tutorielController extends Controller
         $tutoriel = \App\Models\Tutoriel::findOrFail($id);
         return view('visiteurs.tutoriel', ['tutoriel'=> $tutoriel]);
     }
+    
     public function show_form(){
         $tutoriels = \App\Models\Tutoriel::all();
         return view('visiteurs.test-tutoriel', ['tutoriels'=> $tutoriels]);
@@ -29,7 +30,7 @@ class tutorielController extends Controller
 
     }
 
-    public function get_all_tutoriels(){
+    public function getAll_tutoriels(){
         $tutoriels = \App\Models\Tutoriel::all();
         return view('visiteurs.test-tutoriel', ['tutoriels'=> $tutoriels]); 
     }

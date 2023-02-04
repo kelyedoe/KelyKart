@@ -238,6 +238,7 @@ body {
       width: 9rem; }
 
 .footer {
+  bottom: 0;
   background-color: #0D2E4B;
   display: grid;
   grid-template-columns: repeat(2, 1fr);

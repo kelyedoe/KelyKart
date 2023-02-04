@@ -30,21 +30,24 @@
                 <div class="chapitre__board">
                     <ul class="chapitre__list">
 
+                        @foreach ($tutoriels as $tuto)
                         <li class="chapitre__link">
                             <a href="{{asset('formations/tutoriel')}}" class="chapitre__link--anchor">
                                 <ion-icon name="play-circle-outline" class="chapitre__icon"></ion-icon>
-                                    Introduction à Laravel (10min)
+                                    {{$tuto->titre}} ({{$tuto->video_duree}} min)
                             </a>
-                        </li>
+                        </li>  
+                        @endforeach
+                        
 
-                        <li class="chapitre__link">
+                       {{--  <li class="chapitre__link">
                             <a href="" class="chapitre__link--anchor">
                                 <ion-icon name="play-circle-outline" class="chapitre__icon"></ion-icon>
                                     Introduction à Laravel (5min)
                             </a>
-                        </li>
+                        </li> --}}
 
-                        <li class="chapitre__link">
+                        {{-- <li class="chapitre__link">
                             <a href="" class="chapitre__link--anchor">
                                 <ion-icon name="play-circle-outline" class="chapitre__icon"></ion-icon>
                                     Introduction à Laravel (9min)
@@ -56,9 +59,51 @@
                                 <ion-icon name="play-circle-outline" class="chapitre__icon"></ion-icon>
                                     Introduction à Laravel (40min)
                             </a>
+                        </li> --}}
+
+                       {{--  <li class="chapitre__link">
+                            <a href="" class="chapitre__link--anchor">
+                                <ion-icon name="play-circle-outline" class="chapitre__icon"></ion-icon>
+                                    Introduction à Laravel (6min)
+                            </a>
                         </li>
 
                         <li class="chapitre__link">
+                            <a href="" class="chapitre__link--anchor">
+                                <ion-icon name="play-circle-outline" class="chapitre__icon"></ion-icon>
+                                    Introduction à Laravel (9min)
+                            </a>
+                        </li> --}}
+
+                        {{-- <li class="chapitre__link">
+                            <a href="" class="chapitre__link--anchor">
+                                <ion-icon name="play-circle-outline" class="chapitre__icon"></ion-icon>
+                                    Introduction à Laravel (40min)
+                            </a>
+                        </li>
+
+                        <li class="chapitre__link">
+                            <a href="" class="chapitre__link--anchor">
+                                <ion-icon name="play-circle-outline" class="chapitre__icon"></ion-icon>
+                                    Introduction à Laravel (6min)
+                            </a>
+                        </li> --}}
+
+                        {{-- <li class="chapitre__link">
+                            <a href="" class="chapitre__link--anchor">
+                                <ion-icon name="play-circle-outline" class="chapitre__icon"></ion-icon>
+                                    Introduction à Laravel (9min)
+                            </a>
+                        </li>
+
+                        <li class="chapitre__link">
+                            <a href="" class="chapitre__link--anchor">
+                                <ion-icon name="play-circle-outline" class="chapitre__icon"></ion-icon>
+                                    Introduction à Laravel (40min)
+                            </a>
+                        </li> --}}
+
+                        {{-- <li class="chapitre__link">
                             <a href="" class="chapitre__link--anchor">
                                 <ion-icon name="play-circle-outline" class="chapitre__icon"></ion-icon>
                                     Introduction à Laravel (6min)
@@ -71,8 +116,8 @@
                                     Introduction à Laravel (9min)
                             </a>
                         </li>
-
-                        <li class="chapitre__link">
+ --}}
+                        {{-- <li class="chapitre__link">
                             <a href="" class="chapitre__link--anchor">
                                 <ion-icon name="play-circle-outline" class="chapitre__icon"></ion-icon>
                                     Introduction à Laravel (40min)
@@ -84,49 +129,7 @@
                                 <ion-icon name="play-circle-outline" class="chapitre__icon"></ion-icon>
                                     Introduction à Laravel (6min)
                             </a>
-                        </li>
-
-                        <li class="chapitre__link">
-                            <a href="" class="chapitre__link--anchor">
-                                <ion-icon name="play-circle-outline" class="chapitre__icon"></ion-icon>
-                                    Introduction à Laravel (9min)
-                            </a>
-                        </li>
-
-                        <li class="chapitre__link">
-                            <a href="" class="chapitre__link--anchor">
-                                <ion-icon name="play-circle-outline" class="chapitre__icon"></ion-icon>
-                                    Introduction à Laravel (40min)
-                            </a>
-                        </li>
-
-                        <li class="chapitre__link">
-                            <a href="" class="chapitre__link--anchor">
-                                <ion-icon name="play-circle-outline" class="chapitre__icon"></ion-icon>
-                                    Introduction à Laravel (6min)
-                            </a>
-                        </li>
-
-                        <li class="chapitre__link">
-                            <a href="" class="chapitre__link--anchor">
-                                <ion-icon name="play-circle-outline" class="chapitre__icon"></ion-icon>
-                                    Introduction à Laravel (9min)
-                            </a>
-                        </li>
-
-                        <li class="chapitre__link">
-                            <a href="" class="chapitre__link--anchor">
-                                <ion-icon name="play-circle-outline" class="chapitre__icon"></ion-icon>
-                                    Introduction à Laravel (40min)
-                            </a>
-                        </li>
-
-                        <li class="chapitre__link">
-                            <a href="" class="chapitre__link--anchor">
-                                <ion-icon name="play-circle-outline" class="chapitre__icon"></ion-icon>
-                                    Introduction à Laravel (6min)
-                            </a>
-                        </li>
+                        </li> --}}
 
                     </ul>
                 </div>

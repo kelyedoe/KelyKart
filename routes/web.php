@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\formationController;
 use App\Http\Controllers\tutorielController;
 use App\Http\Controllers\indexController;
-
+use App\Models\Formation;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -52,17 +52,18 @@ Route::group(['prefix'=>'formations'] , function(){
         return view('visiteurs.tutoriel');
     });  */
 });
+
 /**** Testing sur le model tutoriels ----- */
 Route::group(['prefix'=>'tutoriels'] , function(){
     //AFficher toutes les tutoriels sous la formation
-    Route::get('/','App\Http\Controllers\tutorielController@getAll_tutoriels');
+    Route::get('/',[tutorielController::class, 'getAll_tutoriels']);
 
     //AJouter un nouveau tutoriel sous une formation
     Route::get('ajouter',[tutorielController::class, 'show_form']);
     Route::post('ajouter',[tutorielController::class, 'create_tutoriel']);
 
     //Afficher un tutoriel
-
+    Route::get('tuto/{id}', [tutorielController::class, 'get_tutoriel']);
 });
 
 
@@ -87,7 +88,14 @@ Route::get('test/users', function(){
     return view('visiteurs.test',['users'=>$users]);
 });
 
-
+Route::get('ftuto', function(){
+    $ftutos = Formation::find(6)->tutoriel()->get();
+    foreach ($ftutos as $key => $tuto) {
+        # code...
+        var_dump($tuto->titre);
+    }
+    
+});
 
 
 
