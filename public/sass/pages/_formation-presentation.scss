@@ -79,9 +79,11 @@
     }
     &__board{
         width: 100%;
-        height: 700px;
+        height: 600px;
         background-color: $color-primary;
         border-radius: 7px;
+        overflow-x: hidden;
+        overflow-y: auto;
     }
 
     &__icon{

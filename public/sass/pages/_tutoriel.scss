@@ -49,6 +49,8 @@
         }
         &--chapitres{
             color: $color-primary !important;
+            overflow-x: hidden;
+            overflow-y: auto;
         }
     }
 }

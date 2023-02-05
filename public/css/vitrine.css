@@ -384,9 +384,11 @@ body {
 
 .chapitre__board {
   width: 100%;
-  height: 700px;
+  height: 600px;
   background-color: #0D2E4B;
-  border-radius: 7px; }
+  border-radius: 7px;
+  overflow-x: hidden;
+  overflow-y: auto; }
 
 .chapitre__icon {
   width: 3rem;
@@ -455,7 +457,9 @@ body {
     font-weight: 500;
     color: #0D2E4B; }
   .tutoriel__bloc--chapitres {
-    color: #0D2E4B !important; }
+    color: #0D2E4B !important;
+    overflow-x: hidden;
+    overflow-y: auto; }
 
 .chapitres__list {
   padding-left: 2rem;
