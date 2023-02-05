@@ -32,7 +32,7 @@
 
                         @foreach ($tutoriels as $tuto)
                         <li class="chapitre__link">
-                            <a href="{{asset('formations/tutoriel')}}" class="chapitre__link--anchor">
+                            <a href="/tutoriels/tuto/{{$tuto->id}}" class="chapitre__link--anchor">
                                 <ion-icon name="play-circle-outline" class="chapitre__icon"></ion-icon>
                                     {{$tuto->titre}} ({{$tuto->video_duree}} min)
                             </a>

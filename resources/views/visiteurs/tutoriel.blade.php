@@ -6,7 +6,7 @@
             </div>
 
             <div class="tutoriel__title">
-                Les routes en laravel
+                {{$tutoriel->titre}}
             </div>
 
             <div class="tutoriel__bloc">
@@ -16,11 +16,62 @@
                 </div>
                 <div class="tutoriel__bloc--program">
                     <div class="tutoriel__bloc--title">
-                        Apprendre laravel
+                        {{$formation->nom}}
                     </div>
                     <div class="tutoriel__bloc--chapitres">
 
                         <ul class="chapitres__list">
+
+                            @foreach ($tutoriels as $tutoriel)
+                            <li class="chapitres__link">
+                                <a href="/tutoriels/tuto/{{$tutoriel->id}}" class="chapitres__link--anchor">
+                                    <ion-icon name="play-circle-outline" class="chapitre__icon "></ion-icon>
+                                        {{$tutoriel->titre}} ({{$tutoriel->video_duree}} min)
+                                </a>
+                            </li>
+                            @endforeach
+                            {{-- <li class="chapitres__link">
+                                <a href="" class="chapitres__link--anchor">
+                                    <ion-icon name="play-circle-outline" class="chapitre__icon "></ion-icon>
+                                        Introduction à Laravel (10min)
+                                </a>
+                            </li>
+
+                            <li class="chapitres__link">
+                                <a href="" class="chapitres__link--anchor">
+                                    <ion-icon name="play-circle-outline" class="chapitre__icon "></ion-icon>
+                                        Introduction à Laravel (10min)
+                                </a>
+                            </li> --}}
+
+                            {{-- <li class="chapitres__link">
+                                <a href="" class="chapitres__link--anchor">
+                                    <ion-icon name="play-circle-outline" class="chapitre__icon "></ion-icon>
+                                        Introduction à Laravel (10min)
+                                </a>
+                            </li>
+
+                            <li class="chapitres__link">
+                                <a href="" class="chapitres__link--anchor">
+                                    <ion-icon name="play-circle-outline" class="chapitre__icon "></ion-icon>
+                                        Introduction à Laravel (10min)
+                                </a>
+                            </li> --}}
+
+                           {{--  <li class="chapitres__link">
+                                <a href="" class="chapitres__link--anchor">
+                                    <ion-icon name="play-circle-outline" class="chapitre__icon "></ion-icon>
+                                        Introduction à Laravel (10min)
+                                </a>
+                            </li>
+
+                            <li class="chapitres__link">
+                                <a href="" class="chapitres__link--anchor">
+                                    <ion-icon name="play-circle-outline" class="chapitre__icon "></ion-icon>
+                                        Introduction à Laravel (10min)
+                                </a>
+                            </li> --}}
+{{-- 
                             <li class="chapitres__link">
                                 <a href="" class="chapitres__link--anchor">
                                     <ion-icon name="play-circle-outline" class="chapitre__icon "></ion-icon>
@@ -33,63 +84,14 @@
                                     <ion-icon name="play-circle-outline" class="chapitre__icon "></ion-icon>
                                         Introduction à Laravel (10min)
                                 </a>
-                            </li>
+                            </li> --}}
 
-                            <li class="chapitres__link">
+                           {{--  <li class="chapitres__link">
                                 <a href="" class="chapitres__link--anchor">
                                     <ion-icon name="play-circle-outline" class="chapitre__icon "></ion-icon>
                                         Introduction à Laravel (10min)
                                 </a>
-                            </li>
-
-                            <li class="chapitres__link">
-                                <a href="" class="chapitres__link--anchor">
-                                    <ion-icon name="play-circle-outline" class="chapitre__icon "></ion-icon>
-                                        Introduction à Laravel (10min)
-                                </a>
-                            </li>
-
-                            <li class="chapitres__link">
-                                <a href="" class="chapitres__link--anchor">
-                                    <ion-icon name="play-circle-outline" class="chapitre__icon "></ion-icon>
-                                        Introduction à Laravel (10min)
-                                </a>
-                            </li>
-
-                            <li class="chapitres__link">
-                                <a href="" class="chapitres__link--anchor">
-                                    <ion-icon name="play-circle-outline" class="chapitre__icon "></ion-icon>
-                                        Introduction à Laravel (10min)
-                                </a>
-                            </li>
-
-                            <li class="chapitres__link">
-                                <a href="" class="chapitres__link--anchor">
-                                    <ion-icon name="play-circle-outline" class="chapitre__icon "></ion-icon>
-                                        Introduction à Laravel (10min)
-                                </a>
-                            </li>
-
-                            <li class="chapitres__link">
-                                <a href="" class="chapitres__link--anchor">
-                                    <ion-icon name="play-circle-outline" class="chapitre__icon "></ion-icon>
-                                        Introduction à Laravel (10min)
-                                </a>
-                            </li>
-
-                            <li class="chapitres__link">
-                                <a href="" class="chapitres__link--anchor">
-                                    <ion-icon name="play-circle-outline" class="chapitre__icon "></ion-icon>
-                                        Introduction à Laravel (10min)
-                                </a>
-                            </li>
-
-                            <li class="chapitres__link">
-                                <a href="" class="chapitres__link--anchor">
-                                    <ion-icon name="play-circle-outline" class="chapitre__icon "></ion-icon>
-                                        Introduction à Laravel (10min)
-                                </a>
-                            </li>
+                            </li> --}}
                         </ul>
 
                     </div>
@@ -99,9 +101,7 @@
             <div class="tutoriel__about">
                 <div class="tutoriel__about--title">A propos de ce tutoriel</div>
                 <div class="tutoriel__about--description">
-                    Le lorem ipsum (également appelé faux-texte, lipsum, ou bolo bolo ) est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer le faux-texte dès qu'il est prêt ou que la mise en page est achevée.                   
-                    Le lorem ipsum (également appelé faux-texte, lipsum, ou bolo bolo ) est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer le faux-texte dès qu'il est prêt ou que la mise en page est achevée.
-                    Le lorem ipsum (également appelé faux-texte, lipsum, ou bolo bolo ) est, en imprimerie, une suite de mots sans signification utilisée à titre provisoire pour calibrer une mise en page, le texte définitif venant remplacer le faux-texte dès qu'il est prêt ou que la mise en page est achevée.    
+                    {{$tutoriel->description}}    
                 </div>
                 
             </div>
@@ -110,17 +110,14 @@
                     
             <div class="tutoriel__text">
                 <div class="tutoriel__text--title">
-                    Tutoriel : Les routes en laravel
+                    Tutoriel {{$tutoriel->id}} : {{$tutoriel->titre}}
                 </div>
                 <div>
                     <div class="tutoriel__text--introduction">
                         Introduction
                     </div>
                     <p class="intro__content">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, rem iste saepe nostrum sequi assumenda dolor magni modi suscipit adipisci quos qui voluptatum in voluptatibus incidunt dolorum perspiciatis dolores accusamus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa, dolorum quo libero rem vero reprehenderit nesciunt fugit dignissimos aliquid error eligendi itaque molestiae, modi veniam blanditiis sequi possimus, consequatur iusto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt nobis odit dicta harum debitis, ad sed laborum tempora quis nisi sequi nulla, eius assumenda expedita praesentium, iste porro vero totam.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quos, quaerat nobis expedita magni explicabo itaque id possimus iure voluptatum ipsa ex est ad sunt, commodi voluptatibus eos vero doloribus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa dolore eius, aut voluptatum debitis sit mollitia! Temporibus, unde ipsum assumenda natus explicabo placeat? Beatae illum praesentium delectus veritatis, assumenda mollitia!
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis, nobis. Iste eveniet laudantium veritatis necessitatibus ipsam pariatur quo, perferendis ipsa provident magni excepturi nemo voluptas quaerat? Fugiat animi blanditiis tempora! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, labore debitis reiciendis voluptates omnis, nihil earum aliquid recusandae possimus provident dolor ad, eum cupiditate quod rerum doloremque architecto iusto minima?
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem eligendi optio consectetur nemo, dolorum qui facere odit quo in tempore delectus quis aut cupiditate, magnam officiis. Aut magni voluptatum quos!
+                        {{$tutoriel->description}}
                     </p> 
                 </div>
                 
@@ -129,10 +126,7 @@
                         Créer des groupes de routes en laravel
                     </div>
                     <p class="intro__content">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, rem iste saepe nostrum sequi assumenda dolor magni modi suscipit adipisci quos qui voluptatum in voluptatibus incidunt dolorum perspiciatis dolores accusamus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa, dolorum quo libero rem vero reprehenderit nesciunt fugit dignissimos aliquid error eligendi itaque molestiae, modi veniam blanditiis sequi possimus, consequatur iusto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt nobis odit dicta harum debitis, ad sed laborum tempora quis nisi sequi nulla, eius assumenda expedita praesentium, iste porro vero totam.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quos, quaerat nobis expedita magni explicabo itaque id possimus iure voluptatum ipsa ex est ad sunt, commodi voluptatibus eos vero doloribus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa dolore eius, aut voluptatum debitis sit mollitia! Temporibus, unde ipsum assumenda natus explicabo placeat? Beatae illum praesentium delectus veritatis, assumenda mollitia!
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis, nobis. Iste eveniet laudantium veritatis necessitatibus ipsam pariatur quo, perferendis ipsa provident magni excepturi nemo voluptas quaerat? Fugiat animi blanditiis tempora! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, labore debitis reiciendis voluptates omnis, nihil earum aliquid recusandae possimus provident dolor ad, eum cupiditate quod rerum doloremque architecto iusto minima?
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem eligendi optio consectetur nemo, dolorum qui facere odit quo in tempore delectus quis aut cupiditate, magnam officiis. Aut magni voluptatum quos!
+                        {{$tutoriel->content}}
                     </p>
                 </div>
                 
@@ -142,10 +136,7 @@
                         Conclusion
                     </div>
                     <p class="intro__content">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, rem iste saepe nostrum sequi assumenda dolor magni modi suscipit adipisci quos qui voluptatum in voluptatibus incidunt dolorum perspiciatis dolores accusamus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa, dolorum quo libero rem vero reprehenderit nesciunt fugit dignissimos aliquid error eligendi itaque molestiae, modi veniam blanditiis sequi possimus, consequatur iusto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt nobis odit dicta harum debitis, ad sed laborum tempora quis nisi sequi nulla, eius assumenda expedita praesentium, iste porro vero totam.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quos, quaerat nobis expedita magni explicabo itaque id possimus iure voluptatum ipsa ex est ad sunt, commodi voluptatibus eos vero doloribus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa dolore eius, aut voluptatum debitis sit mollitia! Temporibus, unde ipsum assumenda natus explicabo placeat? Beatae illum praesentium delectus veritatis, assumenda mollitia!
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis, nobis. Iste eveniet laudantium veritatis necessitatibus ipsam pariatur quo, perferendis ipsa provident magni excepturi nemo voluptas quaerat? Fugiat animi blanditiis tempora! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, labore debitis reiciendis voluptates omnis, nihil earum aliquid recusandae possimus provident dolor ad, eum cupiditate quod rerum doloremque architecto iusto minima?
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem eligendi optio consectetur nemo, dolorum qui facere odit quo in tempore delectus quis aut cupiditate, magnam officiis. Aut magni voluptatum quos!
+                        {{$tutoriel->description}}
                     </p>
                 </div>
             </div>

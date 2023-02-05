@@ -38,6 +38,10 @@ class formationController extends Controller
         $tutoriels = Formation::find($id)->tutoriel()->get();
         return view('visiteurs.formation-presentation', ['result'=>$result, 'tutoriels'=>$tutoriels]);
     }
+   /*  public function formation_tutoriel($id){
+        $formationTutos = Formation::find($id)->tutoriel()->get();
+        return view('visiteurs.')
+    } */
     public function show_update_form($id){
         $result = \App\Models\Formation::findOrFail($id);
         return view('visiteurs.updateFormationForm', ['result'=>$result]);

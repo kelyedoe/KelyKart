@@ -48,9 +48,9 @@ Route::group(['prefix'=>'formations'] , function(){
     //Route pour accéder à l'introduction d'une formation
     Route::get('introduction/{id}',[formationController::class, 'get_formation']);
 
-  /*   Route::get('tutoriel', function(){
+    Route::get('tuto', function(){
         return view('visiteurs.tutoriel');
-    });  */
+    });  
 });
 
 /**** Testing sur le model tutoriels ----- */
@@ -88,14 +88,14 @@ Route::get('test/users', function(){
     return view('visiteurs.test',['users'=>$users]);
 });
 
-Route::get('ftuto', function(){
+/* Route::get('ftuto', function(){
     $ftutos = Formation::find(6)->tutoriel()->get();
     foreach ($ftutos as $key => $tuto) {
         # code...
         var_dump($tuto->titre);
     }
     
-});
+}); */
 
 
 

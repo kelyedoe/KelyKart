@@ -3,13 +3,24 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Tutoriel;
+use App\Models\Formation;
 
 class tutorielController extends Controller
 {
     public function get_tutoriel($id){
         $tutoriel = \App\Models\Tutoriel::findOrFail($id);
-        return view('visiteurs.tutoriel', ['tutoriel'=> $tutoriel]);
+        //$formation = Tutoriel::find($id)->formation()->get();
+        $formationId = $tutoriel->formation_id;
+        $formation = Formation::findOrFail($formationId);
+        $tutoriels = Formation::find($formationId)->tutoriel()->get();
+        return view('visiteurs.tutoriel', ['tutoriel'=> $tutoriel, 'formation'=>$formation, 'tutoriels'=>$tutoriels]);
     }
+
+    public function formation_tutoriel($id){
+        $formationTutos = Formation::find($id)->tutoriel()->get();
+        return view('visiteurs.tutoriel');
+    } 
     
     public function show_form(){
         $tutoriels = \App\Models\Tutoriel::all();
