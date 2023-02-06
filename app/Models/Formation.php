@@ -16,7 +16,8 @@ class Formation extends Model
         'image_icon',
         'video_link_presentation',
         'total_chapitres',
-        'total_duree'
+        'total_duree',
+        'icon_large'
     ];
     /**
      * Retrouver la formation associée au tutoriel.

@@ -2,7 +2,7 @@
     @section('content')
         <div class="tutoriel">
             <div class="formation__introduction--directory">
-                <p>Formation > Laravel > les routes en laravel</p>
+                <p>Formation > {{$formation->nom}} > {{$tutoriel->titre}}</p>
             </div>
 
             <div class="tutoriel__title">

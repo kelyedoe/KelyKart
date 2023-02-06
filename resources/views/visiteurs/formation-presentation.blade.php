@@ -2,7 +2,7 @@
     @section('content')
     <div class="formation__introduction">
         <div class="formation__introduction--directory">
-            <p>Formation > Laravel </p>
+            <p>Formation > {{$result->nom}} </p>
         </div>
         <section class="formation__introduction--header">
             <div class="header__text">
@@ -17,10 +17,10 @@
                         <a href="{{asset('formations/intro')}}" class="formation-page__content--link"><ion-icon name="play-circle-outline" class="chapitre__icon"></ion-icon> Commencer</a>
                     </button>
                 </div>
-            </div>
+            </div>  
 
-            <div class="">
-                <img src="{{asset('images/laravel.png')}}" alt="image" class="header__image">
+            <div class="">{{-- images/{{$result->icon_large}} --}}
+                <img src="{{asset('images/'.$result->icon_large)}}" alt="Large icon not found" class="header__image">
             </div>
         </section>
 

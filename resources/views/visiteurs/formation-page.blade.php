@@ -9,7 +9,6 @@
                     <p class="formation-page__title--description">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, alia.Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, alia.
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, alia.
-
                     </p>
                 </div>
                 @foreach ($formations as $formation)

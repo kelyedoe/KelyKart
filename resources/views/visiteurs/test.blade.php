@@ -7,19 +7,20 @@
     <title>testing view</title>
 </head>
 <body>
-    <form action="ajouter" method="post">
+    <form action="ajouter" method="post" enctype="multipart/form-data">
         @csrf
         <input type="text" name="nom" placeholder="nom">
         <input type="text" name="description" placeholder="description">
         <input type="text" name="presentation" placeholder="presentation">
-        <input type="text" name="image_icon" placeholder="icon de la formation">
+        <input type="file" name="image_icon" placeholder="petite icon de la formation">
         <input type="text" name="video_link_presentation" placeholder="lien video youtube">
         <input type="number" name="total_chapitres" placeholder="nombre de chapitres">
         <input type="number" name="total_duree" placeholder="duree de la video">
+        <input type="file" name="icon_large" placeholder="icon large ">
         <input type="submit" name="submit">
     </form>
     <hr>
-
+{{-- {{ var_dump($formation)}} --}}
     <ul>
         
             @foreach ($formations as $formation)

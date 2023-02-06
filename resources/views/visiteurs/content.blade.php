@@ -30,7 +30,7 @@
             @foreach ($formations as $formation)
                 <div class="formations__item">
                     <div>
-                        <img src="{{asset('images/laravel.png')}}" class="formations__item--image" alt="laravel">
+                        <img src="images/{{$formation->icon_large}}" class="formations__item--image" alt="laravel">
                     </div>
 
                     <div class="formations__text">

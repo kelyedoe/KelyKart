@@ -53,7 +53,7 @@ Route::group(['prefix'=>'formations'] , function(){
     });  
 });
 
-/**** Testing sur le model tutoriels ----- */
+/**** Testing sur le model tutoriels VALIDE ----- */
 Route::group(['prefix'=>'tutoriels'] , function(){
     //AFficher toutes les tutoriels sous la formation
     Route::get('/',[tutorielController::class, 'getAll_tutoriels']);

@@ -13,12 +13,8 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::table('tutoriels', function (Blueprint $table) {
-            /** Ajouter user_id en foreign key */
-            $table->foreignId('user_id')
-            ->constrained()
-            ->onUpdate('cascade')
-            ->onDelete('cascade'); 
+        Schema::table('formations', function (Blueprint $table) {
+            $table->string('icon_large');
         });
     }
 
@@ -29,7 +25,7 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::table('tutoriels', function (Blueprint $table) {
+        Schema::table('formations', function (Blueprint $table) {
             //
         });
     }
