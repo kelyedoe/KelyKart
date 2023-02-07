@@ -425,6 +425,15 @@ body {
   -webkit-box-shadow: -6px 7px 21px -6px rgba(0, 176, 255, 0.75);
   -moz-box-shadow: -6px 7px 21px -6px rgba(0, 176, 255, 0.75); }
 
+.empty__tutoriels {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #fff; }
+  .empty__tutoriels--cto {
+    background-color: red; }
+  .empty__tutoriels--thanks {
+    background-color: greenyellow; }
+
 .tutoriel__about {
   margin: 3rem; }
   .tutoriel__about--title {
@@ -524,3 +533,14 @@ body {
   font-size: 1.6rem;
   font-weight: 500;
   color: #0D2E4B; }
+
+.backend__header {
+  text-align: center;
+  margin: 5rem; }
+  .backend__header--logo {
+    font-size: 5rem;
+    color: #0D2E4B;
+    text-align: center; }
+  .backend__header--text {
+    color: #00B0FF;
+    font-size: 2rem; }

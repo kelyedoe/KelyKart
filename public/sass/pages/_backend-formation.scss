@@ -1,0 +1,17 @@
+.backend{
+
+    &__header{
+        text-align: center;
+        margin: 5rem;
+
+        &--logo{
+            font-size: 5rem;
+            color: $color-primary;
+            text-align: center;
+        }
+        &--text{
+            color: $color-secondary-light;
+            font-size: 2rem;
+        }
+    }
+}

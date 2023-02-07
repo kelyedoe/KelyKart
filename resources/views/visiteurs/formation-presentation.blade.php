@@ -29,17 +29,25 @@
                 <div class="chapitre__title">Chapitres</div>
                 <div class="chapitre__board">
                     <ul class="chapitre__list">
-
-                        @foreach ($tutoriels as $tuto)
-                        <li class="chapitre__link">
-                            <a href="/tutoriels/tuto/{{$tuto->id}}" class="chapitre__link--anchor">
-                                <ion-icon name="play-circle-outline" class="chapitre__icon"></ion-icon>
-                                    {{$tuto->titre}} ({{$tuto->video_duree}} min)
-                                 
-                            </a>
-                        </li>  
-                        @endforeach
                         
+                            
+                            @if ($tutoriels->isEmpty())
+                                <p class="empty__tutoriels">
+                                   Les Tutos sont en cours de dev. <br>
+                                   <span class="empty__tutoriels--cto">Revenez plus tard</span>
+                                   
+                                </p>
+                            @else
+                                @foreach ($tutoriels as $tuto)
+                                <li class="chapitre__link">
+                                    <a href="/tutoriels/tuto/{{$tuto->id}}" class="chapitre__link--anchor">
+                                        <ion-icon name="play-circle-outline" class="chapitre__icon"></ion-icon>
+                                            {{$tuto->titre}} ({{$tuto->video_duree}} min)
+                                        
+                                    </a>
+                                </li>  
+                                @endforeach
+                            @endif 
 
                        {{--  <li class="chapitre__link">
                             <a href="" class="chapitre__link--anchor">

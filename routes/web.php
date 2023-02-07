@@ -53,7 +53,7 @@ Route::group(['prefix'=>'formations'] , function(){
     });  
 });
 
-/**** Testing sur le model tutoriels VALIDE ----- */
+/**** Mise en place des routes pour gérer les tutoriels VALIDE ----- */
 Route::group(['prefix'=>'tutoriels'] , function(){
     //AFficher toutes les tutoriels sous la formation
     Route::get('/',[tutorielController::class, 'getAll_tutoriels']);
@@ -62,12 +62,12 @@ Route::group(['prefix'=>'tutoriels'] , function(){
     Route::get('ajouter',[tutorielController::class, 'show_form']);
     Route::post('ajouter',[tutorielController::class, 'create_tutoriel']);
 
-    //Afficher un tutoriel
+    //Afficher un tutoriel au complet
     Route::get('tuto/{id}', [tutorielController::class, 'get_tutoriel']);
 });
 
 
-
+/** Gestion des Podcats du sytème */
 /*  Groupe de routes pour la section des podcasts */
 Route::group(['prefix'=>'podcasts'], function(){
     Route::get('/', function(){
@@ -111,4 +111,9 @@ Route::middleware([
     Route::get('/dashboard', function () {
         return view('dashboard');
     })->name('dashboard');
+});
+
+
+Route::get('backend-add-formation', function(){
+    return view('backend.add-formation');
 });

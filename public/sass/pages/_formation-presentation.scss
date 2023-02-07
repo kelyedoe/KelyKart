@@ -131,3 +131,16 @@
 -webkit-box-shadow: -6px 7px 21px -6px rgba(0,176,255,0.75);
 -moz-box-shadow: -6px 7px 21px -6px rgba(0,176,255,0.75);
 }
+
+.empty__tutoriels{
+    font-size: 2rem;
+    font-weight: 500;
+    color: #fff;
+
+    &--cto{
+        background-color: red;
+    }
+    &--thanks{
+        background-color: greenyellow;
+    }
+}
