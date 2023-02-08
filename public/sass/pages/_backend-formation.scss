@@ -1,4 +1,21 @@
+
 .backend{
+
+    &__add--formation{
+        background-color: $color-secondary-light;
+        height: 5rem;
+        color: $color-primary;
+        margin: 2rem;
+        border-style: none;
+        font-size: 1.2rem;
+        width: 9rem;
+        font-weight: 500;
+        border-radius: .5rem;
+    }
+
+    &__add--linkk{
+        text-decoration: none;
+    }
 
     &__header{
         text-align: center;
@@ -39,6 +56,29 @@
             border-style: none;
             color: #fff;
             background-color: $color-primary;
+        }
+    }
+}
+
+.liste{
+   width: 100%;
+    border: 1px solid $color-primary;
+    margin-bottom: 5rem;
+    &__row{
+        //display: grid;
+        //grid-template-columns: repeat(5, 1fr);
+
+        &--header{
+            font-size: 1.2rem;
+            color: $color-primary;
+            border: 1px solid $color-primary;
+        }
+        &--data{
+            color: $color-primary;
+            font-size: 1.2rem;
+            border: 1px solid $color-primary;
+            padding: .6rem;
+            text-align: justify;
         }
     }
 }

@@ -13,6 +13,12 @@ class formationController extends Controller
         $formations = \App\Models\Formation::all();
         return view('visiteurs.formation-page', ['formations'=>$formations]);
     }
+
+    //Get all formations for backend table
+    public function getAll_backend(){
+        $formations = \App\Models\Formation::all();
+        return view('backend.formations', ['formations'=>$formations]);
+    }
     // Here goes all the conrollers for Formation class
     //show_form() function used to show the form
     public function show_form(){

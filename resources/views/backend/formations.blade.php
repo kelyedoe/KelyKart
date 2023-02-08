@@ -1,0 +1,44 @@
+@extends('visiteurs.index')
+    @section('content')
+        <div class="backend">
+            <div class="backend__header">
+                <h3 class="backend__header--logo">φως καρτ</h3>
+                <p class="backend__header--text"> backend / Formations</p>
+            </div>
+            {{-- <hr class="backend__header--separator"> --}}
+            <button class="backend__add--formation"><a href="{{asset('backend/ajouter')}}" class="backend__add--link"> Ajouter +</a> </button>  
+            <a href="{{asset('backend/tutoriels')}}" class="backend__add--link"> <button class="backend__add--formation"> Tutoriels</button></a>
+        </div>
+            <table class="liste">
+                <tr class="liste__row">
+                    <th class="liste__row--header">Nom</th>
+                    <th class="liste__row--header">description</th>
+                    <th class="liste__row--header">Nombre de chapitres</th>
+                    <th class="liste__row--header">Durée de la formation</th>
+                    <th class="liste__row--header">Video Youtube</th>
+                    <th class="liste__row--header">Date de Création</th>
+                    <th class="liste__row--header">Options</th>
+                </tr>
+
+                @foreach ($formations as $formation)
+                <tr class="liste__row">
+                    <td class="liste__row--data">{{$formation->nom}}</td>
+                    <td class="liste__row--data">{{$formation->description}}</td>
+                    <td class="liste__row--data">{{$formation->total_chapitres}} chps</td>
+                    <td class="liste__row--data">{{$formation->total_duree}} heures</td>
+                    <td class="liste__row--data">{{$formation->video_link_presentation}}</td>
+                    <td class="liste__row--data">{{$formation->created_at}}</td>
+                    <td class="liste__row--data">
+                        <a href="/backend/mettre-a-jour/{{$formation->id}}">Edit</a>
+                        <a href="#">Delete X</a> 
+                         {{-- /formations/supprimer/{{$formation->id}} --}}
+                        
+                    </td>
+                </tr>
+                @endforeach
+            </table>
+            
+            
+       
+        
+    @endsection

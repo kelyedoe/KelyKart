@@ -534,6 +534,20 @@ body {
   font-weight: 500;
   color: #0D2E4B; }
 
+.backend__add--formation {
+  background-color: #00B0FF;
+  height: 5rem;
+  color: #0D2E4B;
+  margin: 2rem;
+  border-style: none;
+  font-size: 1.2rem;
+  width: 9rem;
+  font-weight: 500;
+  border-radius: .5rem; }
+
+.backend__add--linkk {
+  text-decoration: none; }
+
 .backend__header {
   text-align: center;
   margin: 5rem; }
@@ -566,3 +580,18 @@ body {
     border-style: none;
     color: #fff;
     background-color: #0D2E4B; }
+
+.liste {
+  width: 100%;
+  border: 1px solid #0D2E4B;
+  margin-bottom: 5rem; }
+  .liste__row--header {
+    font-size: 1.2rem;
+    color: #0D2E4B;
+    border: 1px solid #0D2E4B; }
+  .liste__row--data {
+    color: #0D2E4B;
+    font-size: 1.2rem;
+    border: 1px solid #0D2E4B;
+    padding: .6rem;
+    text-align: justify; }
