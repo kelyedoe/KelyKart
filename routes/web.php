@@ -89,6 +89,10 @@ Route::group(['prefix'=>'podcasts'], function(){
     Route::get('/', function(){
         return view('visiteurs.podcast-page');
     });
+
+    route::get('pod', function(){
+        return view('visiteurs.podcasts');
+    });
 });
 
 /*  Groupe de routes pour la section de blog */

@@ -6,7 +6,7 @@
                 <p class="backend__header--text"> backend / Formations</p>
             </div>
             {{-- <hr class="backend__header--separator"> --}}
-            <button class="backend__add--formation"><a href="{{asset('backend/ajouter')}}" class="backend__add--link"> Ajouter +</a> </button>  
+            <a href="{{asset('backend/ajouter')}}" class="backend__add--link"><button class="backend__add--formation">Ajouter +</button></a>
             <a href="{{asset('backend/tutoriels')}}" class="backend__add--link"> <button class="backend__add--formation"> Tutoriels</button></a>
         </div>
             <table class="liste">
