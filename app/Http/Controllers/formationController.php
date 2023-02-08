@@ -17,7 +17,7 @@ class formationController extends Controller
     //show_form() function used to show the form
     public function show_form(){
         $formations = \App\Models\Formation::all();
-        return view('visiteurs.test',['formations'=> $formations]);
+        return view('backend.add-formation',['formations'=> $formations]);
     }
     // create function to insert new formation into the database
     public function create_formation(Request $request){
@@ -57,7 +57,7 @@ class formationController extends Controller
     } */
     public function show_update_form($id){
         $result = \App\Models\Formation::findOrFail($id);
-        return view('visiteurs.updateFormationForm', ['result'=>$result]);
+        return view('backend.update-formation', ['result'=>$result]);
     }
     public function update_formation( Request $request, $id){
         $formation = Formation::where('id', $id)

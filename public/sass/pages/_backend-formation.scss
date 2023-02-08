@@ -13,5 +13,32 @@
             color: $color-secondary-light;
             font-size: 2rem;
         }
+        &--separator{
+            width: 50%;
+            text-align: center;
+        }
+        &--form{
+            margin: 3rem;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            padding: 5rem;
+            gap: 2rem;
+        }
+        &--input{
+            height: 5rem;
+            padding-left: 2rem;
+            border-style: none;
+            border: 3px solid $color-secondary-light;
+            border-radius: 9px;
+            //border-bottom: 3px solid $color-secondary-light;;
+        }
+        &--button{
+            height: 5rem;
+            border-radius: 9px;
+            font-size: 2rem;
+            border-style: none;
+            color: #fff;
+            background-color: $color-primary;
+        }
     }
 }

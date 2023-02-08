@@ -82,6 +82,11 @@ Route::group(['prefix'=>'blog'], function(){
     });
 });
 
+
+/* Route::get('add-formation', function(){
+    return view('backend.add-formation');
+}); */
+
 Route::get('test/{id}', [formationController::class, 'get']);
 Route::get('test/users', function(){
     $users = \App\Models\User::all();
@@ -114,6 +119,3 @@ Route::middleware([
 });
 
 
-Route::get('backend-add-formation', function(){
-    return view('backend.add-formation');
-});

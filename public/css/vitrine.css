@@ -544,3 +544,25 @@ body {
   .backend__header--text {
     color: #00B0FF;
     font-size: 2rem; }
+  .backend__header--separator {
+    width: 50%;
+    text-align: center; }
+  .backend__header--form {
+    margin: 3rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 5rem;
+    gap: 2rem; }
+  .backend__header--input {
+    height: 5rem;
+    padding-left: 2rem;
+    border-style: none;
+    border: 3px solid #00B0FF;
+    border-radius: 9px; }
+  .backend__header--button {
+    height: 5rem;
+    border-radius: 9px;
+    font-size: 2rem;
+    border-style: none;
+    color: #fff;
+    background-color: #0D2E4B; }
