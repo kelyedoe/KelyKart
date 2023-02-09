@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\formationController;
 use App\Http\Controllers\tutorielController;
+use App\Http\Controllers\podcastController;
 use App\Http\Controllers\indexController;
 use App\Models\Formation;
 /*
@@ -56,15 +57,23 @@ Route::group(['prefix'=>'backend'], function(){
     // Sous groupe de routets pour gerer les tutoriels dans la DB
 
       //AJouter un nouveau tutoriel sous une formation
-      Route::get('ajouter-tutoriel',[tutorielController::class, 'show_form']);
-      Route::post('ajouter-tutoriel',[tutorielController::class, 'create_tutoriel']);
+    Route::get('ajouter-tutoriel',[tutorielController::class, 'show_form']);
+    Route::post('ajouter-tutoriel',[tutorielController::class, 'create_tutoriel']);
       
         // Recupérer tous les tutoriels de DB et les afficher dans le tabeau
-      Route::get('tutoriels',[tutorielController::class, 'getAll_tutoriels']); 
+    Route::get('tutoriels',[tutorielController::class, 'getAll_tutoriels']); 
 
     //Modifier les details d'un tutoriel
     Route::get('update-tutoriel/{id}', [tutorielController::class , 'show_update_form']);
     Route::post('update-tutoriel/{id}', [tutorielController::class, 'update_tutoriel']);
+
+    //Ajouter un podcast dans la DB
+    Route::get('ajouter-podcasts', [podcastController::class, 'show_form']);
+    Route::post('ajouter-podcasts', [podcastController::class, 'create_podcast']);
+
+     // Recupérer tous les podcasts de DB et les afficher dans le tabeau
+     Route::get('podcasts',[podcastController::class, 'getAll_podcasts']);
+
 });
 
 
@@ -74,10 +83,6 @@ Route::group(['prefix'=>'tutoriels'] , function(){
     //AFficher toutes les tutoriels sous la formation
     Route::get('/',[tutorielController::class, 'getAll_tutoriels']);
 
-   /*  //AJouter un nouveau tutoriel sous une formation
-    Route::get('ajouter',[tutorielController::class, 'show_form']);
-    Route::post('ajouter',[tutorielController::class, 'create_tutoriel']);
- */
     //Afficher un tutoriel au complet
     Route::get('tuto/{id}', [tutorielController::class, 'get_tutoriel']);
 });
@@ -86,9 +91,9 @@ Route::group(['prefix'=>'tutoriels'] , function(){
 /** Gestion des Podcats du sytème */
 /*  Groupe de routes pour la section des podcasts */
 Route::group(['prefix'=>'podcasts'], function(){
-    Route::get('/', function(){
-        return view('visiteurs.podcast-page');
-    });
+    Route::get('/', [podcastController::class, 'getAll']);
+
+    Route::get('{id}', [podcastController::class, 'get_podcast']);
 
     route::get('pod', function(){
         return view('visiteurs.podcasts');

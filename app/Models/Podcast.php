@@ -9,6 +9,8 @@ class Podcast extends Model
 {
     use HasFactory;
 
+    public $timestamps = false;
+
     protected $fillable = [
         'titre',
         'introduction',
@@ -21,10 +23,11 @@ class Podcast extends Model
         'lien_video',
         'user_id' 
     ];
+    
 
     /**
-     * Retrouver l'admin associée au tutoriel.
-     * Retrouver le créateur de la formation
+     * Retrouver l'admin associée au podcast.
+     * Retrouver le créateur du podcast
      */
     public function user()
     {

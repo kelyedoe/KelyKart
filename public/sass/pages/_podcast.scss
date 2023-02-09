@@ -1,0 +1,33 @@
+.podcast{
+    background-color: #F5F5F5;
+    margin: 5rem;
+    border-radius: 1.2rem;
+    
+
+    &__header{
+        color: $color-primary;
+        padding: 1rem;
+        font-size: 2rem;
+    }
+
+    &__description{
+        font-size: 1rem;
+        color: $color-primary;
+        padding-top:0;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    &__realisateur{
+        font-size: 2rem;
+        color: $color-primary;
+        padding: 2rem;
+    }
+
+    &__footer{
+        font-size: 1.2rem;
+        color: $color-primary;
+        padding: 2rem;
+    }
+}

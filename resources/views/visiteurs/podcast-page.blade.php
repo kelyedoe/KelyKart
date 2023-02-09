@@ -12,24 +12,25 @@
 
                     </p>
                 </div>
+
+            @foreach ($podcasts as $podcast)
                 <div class="formation-page__content">
                     <div class="formation-page__content--image">
-                        <img src="{{asset('images/micro.png')}}" class="formation-page__content--image" alt="">
+                        <img src="images/{{$podcast->image_icon}}" class="formation-page__content--image" alt="">
                     </div>
-                    <div class="formation-page__content--titre">avec Jeff Bezos</div>
+                    <a href="/podcasts/{{$podcast->id}}" class="formation-page__content--link"><div class="formation-page__content--titre">{{$podcast->titre}}</div></a>
                     <div class="formation-page__content--description">
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, alia.
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, alia.
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, alia.
+                           {{$podcast->introduction}}
                         </p>
                     </div>
                     
                     <div class="formation-page__content--footer">
                             <span><ion-icon name="folder-open-outline"></ion-icon> 120 Chapitres</span>
-                            <span><ion-icon name="time-outline"></ion-icon> 10 Heures.</span>
+                            <span><ion-icon name="time-outline"></ion-icon> {{$podcast->duree_video}} minutes</span>
                     </div>
-                </div>
+                </div> 
+            @endforeach
                 
                 <div class="formation-page__content">
                     <div class="formation-page__content--image">
@@ -50,7 +51,7 @@
                     </div>
                 </div>
 
-                <div class="formation-page__content">
+                {{-- <div class="formation-page__content">
                     <div class="formation-page__content--image">
                         <img src="{{asset('images/micro.png')}}" class="formation-page__content--image" alt="">
                     </div>
@@ -68,9 +69,9 @@
                             <span><ion-icon name="time-outline"></ion-icon> 10 Heures.</span>
                     </div>
                 </div>
+ --}}
 
-
-                <div class="formation-page__content">
+               {{--  <div class="formation-page__content">
                     <div class="formation-page__content--image">
                         <img src="{{asset('images/micro.png')}}" class="formation-page__content--image" alt="">
                     </div>
@@ -88,8 +89,8 @@
                             <span><ion-icon name="time-outline"></ion-icon> 10 Heures.</span>
                     </div>
                 </div>
-
-                <div class="formation-page__content">
+ --}}
+                {{-- <div class="formation-page__content">
                     <div class="formation-page__content--image">
                         <img src="{{asset('images/micro.png')}}" class="formation-page__content--image" alt="">
                     </div>
@@ -106,9 +107,9 @@
                             <span><ion-icon name="folder-open-outline"></ion-icon> 120 Chapitres</span>
                             <span><ion-icon name="time-outline"></ion-icon> 10 Heures.</span>
                     </div>
-                </div>
+                </div> --}}
 
-                <div class="formation-page__content">
+                {{-- <div class="formation-page__content">
                     <div class="formation-page__content--image">
                         <img src="{{asset('images/micro.png')}}" class="formation-page__content--image" alt="">
                     </div>
@@ -125,7 +126,7 @@
                             <span><ion-icon name="folder-open-outline"></ion-icon> 120 Chapitres</span>
                             <span><ion-icon name="time-outline"></ion-icon> 10 Heures.</span>
                     </div>
-                </div>
+                </div> --}}
         </section>
         
     @endsection

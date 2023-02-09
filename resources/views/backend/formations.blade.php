@@ -8,6 +8,7 @@
             {{-- <hr class="backend__header--separator"> --}}
             <a href="{{asset('backend/ajouter')}}" class="backend__add--link"><button class="backend__add--formation">Ajouter +</button></a>
             <a href="{{asset('backend/tutoriels')}}" class="backend__add--link"> <button class="backend__add--formation"> Tutoriels</button></a>
+            <a href="{{asset('backend/podcasts')}}" class="backend__add--link"> <button class="backend__add--formation"> Podcasts</button></a>
         </div>
             <table class="liste">
                 <tr class="liste__row">
@@ -36,9 +37,5 @@
                     </td>
                 </tr>
                 @endforeach
-            </table>
-            
-            
-       
-        
-    @endsection
+            </table>  
+@endsection

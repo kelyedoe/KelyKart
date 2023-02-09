@@ -8,6 +8,7 @@
             {{-- <hr class="backend__header--separator"> --}}
             <a href="{{asset('backend/ajouter-tutoriel')}}" class="backend__add--link"><button class="backend__add--formation">Ajouter +</button></a>
             <a href="{{asset('backend/')}}" class="backend__add--link"> <button class="backend__add--formation"> Formations</button></a>
+            <a href="{{asset('backend/podcasts')}}" class="backend__add--link"> <button class="backend__add--formation"> Podcasts</button></a>
        
        
         </div>
