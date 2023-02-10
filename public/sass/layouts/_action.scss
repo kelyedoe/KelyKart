@@ -1,13 +1,33 @@
 .box{
     margin: 5rem;
+    @include respond(tab-port){
+
+    }
 }
 .action{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    @include respond(tab-port){
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    &__mediaq{
+        @include respond(tab-port){
+            text-align: center;
+        }
+    }
 
     &__image{
         width: 500px;
         height: 100%;
+        display: block;
+        @include respond(tab-port){
+            display: none;
+        }
+    }
+
+    &__button{
+        width: 100%;
     }
 }
 
@@ -19,8 +39,22 @@
 .gratuit{
     font-size: 5rem;
     color: $color-primary;
+    animation: moveInLeft 2s ease-out;
 }
 .new{
     font-size: 2.5rem;
     color: $color-primary;
+}
+
+.buttons__blue{
+    width: 100%;
+}
+
+.buttons__orange{
+    width: 100%;
+    background-color: $color-primary;
+}
+
+.btn--color{
+    background-color: $color-primary;
 }

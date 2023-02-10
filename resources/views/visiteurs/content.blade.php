@@ -4,12 +4,27 @@
     <section class="box">
         <div class="row action">
             <div class="action__text ">
-                <span class="apprenez">Apprenez</span> <br> <span class="new">de nouvelles choses</span> <br> <span class="gratuit">Gratuitement.</span>
+                <span class="apprenez">Apprenez</span> <br> 
+                <span class="new">de nouvelles choses</span> <br> 
+                <span class="gratuit">Gratuitement.</span>
 
-                <div class="row buttons">
-                    
-                    <button class="buttons__blue" type="button">Formations</button>
-                    <button class="buttons__orange" type="button">Blog</button>
+                <div class="row buttons action__mediaq">
+                    <a href="{{asset('formations')}}" class="action__button">
+                        <button class="buttons__blue" type="button">
+                            Formations
+                        </button>
+                    </a>
+
+                    <a href="{{asset('blog')}}" class="action__button">
+                        <button class="buttons__blue btn--color" type="button">
+                            Blog
+                        </button>
+                    </a>
+                   {{--  <a href="">
+                        <button class="buttons__orange" type="button">
+                            Blog
+                        </button>
+                    </a> --}}
                 </div>
             </div>
             <div class=" col-1-of-2">
@@ -21,7 +36,9 @@
 {{-- Formations Section start --}}
     <section class="formations">
         <div class="formations__header">
-            <span class="les">Les</span><span class="format"> formations</span> <br> <span class="disponibles">disponibles.</span>
+            <span class="les">Les</span><span class="format"> 
+                formations</span> <br> 
+                <span class="disponibles">disponibles.</span>
            
         </div>
         
@@ -30,7 +47,7 @@
             @foreach ($formations as $formation)
                 <div class="formations__item">
                     <div>
-                        <img src="images/{{$formation->icon_large}}" class="formations__item--image" alt="laravel">
+                        <img src="images/{{$formation->icon_large}}" class="formations__item--image" alt="formation icon">
                     </div>
 
                     <div class="formations__text">

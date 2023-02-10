@@ -1,8 +1,10 @@
 .header{
+
    &__logo{
     width: 4.5rem;
     height: 4rem;
    }
+
     display: flex;
     align-items: center;
     align-content: space-between;
@@ -26,7 +28,18 @@
             text-decoration: none;
             list-style: none;
             color: $color-primary;
+            transition: all 1.8s;
         }
+
+        &--link:hover,
+        &--link:active
+        {
+            color: $color-secondary-light;
+            transform: scale(1.2);
+            //background-color: $color-secondary-light;
+            
+        }
+
     }
     &__line{
         margin-top: 0.6rem;

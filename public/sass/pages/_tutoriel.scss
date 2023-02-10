@@ -32,10 +32,21 @@
         gap: 2rem;
         border-radius: 0.4rem;
 
+        @include respond(tab-port){
+            grid-template-columns: repeat(1,1fr );
+            margin: 1rem;
+            padding-bottom: 3rem;
+            
+        }
+
         &--video{
             //background-color: $color-primary;
             grid-column: 1/3;
             height: 400px;
+            @include respond(tab-port){
+                grid-column: 1/2;   
+                padding: 1rem;
+            }
         }
         &--program{
             
@@ -101,6 +112,10 @@
 .section__tutoriel--text{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+
+    @include respond(tab-port){
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 .tutoriel__details{

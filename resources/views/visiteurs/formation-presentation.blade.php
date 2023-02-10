@@ -11,11 +11,14 @@
                     <p>
                         {{$result->description}}
                     </p>
-                </div>
+                </div> 
                 <div class="header__text--button">
+                    <a href="{{-- /tutoriels/tuto/{{$first_tuto->id}} --}}" class="formation-page__content--link">
                     <button class="header__btn">
-                        <a href="{{asset('formations/intro')}}" class="formation-page__content--link"><ion-icon name="play-circle-outline" class="chapitre__icon"></ion-icon> Commencer</a>
+                        <ion-icon name="play-circle-outline" class="chapitre__icon"></ion-icon>
+                         Commencer       
                     </button>
+                </a>
                 </div>
             </div>  
 

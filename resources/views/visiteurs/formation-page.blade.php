@@ -4,7 +4,10 @@
         <section class="formation-page">            
                 <div class="formation-page__title">
                     <p class="formation-page__title--header">
-                        toutes les formations <span class="formation-page__title--span">disponibles</span> 
+                        toutes les formations 
+                        <span class="formation-page__title--span">
+                            disponibles
+                        </span> 
                     </p>
                     <p class="formation-page__title--description">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, alia.Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, alia.

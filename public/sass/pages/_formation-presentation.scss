@@ -12,6 +12,10 @@
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
         padding: 3rem;
+
+        @include respond(tab-port){
+            grid-template-columns: repeat(1,1fr );
+        }
     }
     
 }
@@ -22,6 +26,11 @@
         height: 200px;
         float: right;
         margin-right: 5rem;
+        display: block;
+        @include respond(tab-port){
+            display: none;
+        }
+        
     }
     &__btn{
         height: 4rem;
@@ -60,6 +69,11 @@
         grid-template-columns: repeat(2, 1fr);
         gap: 10rem;
 
+        @include respond(tab-port){
+            grid-template-columns: repeat(1,1fr );
+            padding: 3rem;
+        }
+
         &--chapitre{
             //border: 2px solid $color-secondary-light;
         }
@@ -84,6 +98,10 @@
         border-radius: 7px;
         overflow-x: hidden;
         overflow-y: auto;
+
+        @include respond(tab-port){
+            height: 200px;
+        }
     }
 
     &__icon{
@@ -107,6 +125,7 @@
         height: 320px;
         width: 100%;
         margin-top: 3rem;
+        margin-bottom: 5rem;
     }
 }
 
@@ -143,4 +162,10 @@
     &--thanks{
         background-color: greenyellow;
     }
+}
+
+.formation-page__content--link:hover,
+formation-page__content--link:active{
+    color: $color-secondary-dark;
+    transform: scale(1.06);
 }

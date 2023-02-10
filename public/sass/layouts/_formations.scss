@@ -1,10 +1,17 @@
-
+*
 .formations{
     padding: 5rem;
     text-decoration: none;
 
+    @include respond(tab-port){
+        padding: 1rem;
+    }
+
     &__header{
         padding: 4rem;
+        @include respond(tab-port){
+            padding: 2rem;
+        }
     }
 
     &__list{
@@ -12,6 +19,13 @@
         grid-template-columns: repeat(4, 1fr);
         padding: 2rem;
         gap: 4rem;
+        @include respond(tab-port){
+            margin: 5rem;
+            grid-template-columns: repeat(1, 1fr);
+           // gap: 0;
+            padding: 3rem;
+            margin-bottom: 3rem;
+        }
     }
 
     &__text{
@@ -53,11 +67,19 @@
     font-size: 6rem;
     color: $color-secondary-light;
     font-weight: 500;
+    @include respond(tab-port){
+        font-size: 4.5rem;
+        font-weight: 700;
+    }
 }
 .format{
     font-size: 6rem;
     color: $color-primary;
     font-weight: 500;
+    @include respond(tab-port){
+        font-size: 4.5rem;
+        
+    }
 }
 .disponibles{
     font-size: 3rem;

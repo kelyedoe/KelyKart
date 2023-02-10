@@ -55,7 +55,8 @@ class formationController extends Controller
     public function get_formation($id){
         $result = \App\Models\Formation::findOrFail($id);
         $tutoriels = Formation::find($id)->tutoriel()->get();
-        return view('visiteurs.formation-presentation', ['result'=>$result, 'tutoriels'=>$tutoriels]);
+        $first_tuto = $tutoriels->first();
+        return view('visiteurs.formation-presentation', ['result'=>$result, 'tutoriels'=>$tutoriels, 'first_tuto'=>$first_tuto]);
     }
    /*  public function formation_tutoriel($id){
         $formationTutos = Formation::find($id)->tutoriel()->get();
