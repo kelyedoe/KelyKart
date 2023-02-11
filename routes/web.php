@@ -129,3 +129,8 @@ Route::middleware([
 });
 
 
+route::get('tw', function(){
+    return view('twelcome');
+});
+
+

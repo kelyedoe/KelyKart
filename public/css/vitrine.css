@@ -643,7 +643,11 @@ formation-page__content--link:active {
 .tutoriel__details--line {
   color: #00B0FF;
   width: 100%;
-  text-align: center; }
+  text-align: center;
+  display: block; }
+  @media (max-width: 56.25em) {
+    .tutoriel__details--line {
+      display: none; } }
 
 .tutoriel__details--auteur {
   display: grid;
@@ -729,6 +733,9 @@ formation-page__content--link:active {
     border: 1px solid #0D2E4B;
     padding: .6rem;
     text-align: justify; }
+
+.double__col {
+  grid-column: 1/3; }
 
 .podcast {
   background-color: #F5F5F5;

@@ -12,6 +12,7 @@
         </div>
             <table class="liste">
                 <tr class="liste__row">
+                    <th class="liste__row--header">N°</th>
                     <th class="liste__row--header">Nom</th>
                     <th class="liste__row--header">description</th>
                     <th class="liste__row--header">Nombre de chapitres</th>
@@ -20,9 +21,10 @@
                     <th class="liste__row--header">Date de Création</th>
                     <th class="liste__row--header">Options</th>
                 </tr>
-
+               {{--  style="background-color: {{ $loop->index%2 ? :'#9E9E9E' }}" --}}
                 @foreach ($formations as $formation)
                 <tr class="liste__row">
+                    <td class="liste__row--data">{{$loop->iteration}}</td>
                     <td class="liste__row--data">{{$formation->nom}}</td>
                     <td class="liste__row--data">{{$formation->description}}</td>
                     <td class="liste__row--data">{{$formation->total_chapitres}} chps</td>

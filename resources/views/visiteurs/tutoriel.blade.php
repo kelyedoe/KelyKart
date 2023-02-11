@@ -122,11 +122,11 @@
                 </div>
                 
                 <div>
-                    <div class="tutoriel__text--introduction">
+                   {{--  <div class="tutoriel__text--introduction">
                         Créer des groupes de routes en laravel
-                    </div>
+                    </div> --}}
                     <p class="intro__content">
-                        {{$tutoriel->content}}
+                        {!! html_entity_decode($tutoriel->content) !!}
                     </p>
                 </div>
                 
