@@ -6,6 +6,17 @@
     gap: 2rem;
     width: 100%;
 
+    &__icon{
+        
+
+        &--link:link, &--link:active{
+            color: #fff;
+        }
+        &--link:hover, &--link:visited{
+            transform: scale(1.2);
+        }
+    }
+
     &__retrouvez{
         padding-top: 3rem;
         padding-right: 3rem;
@@ -34,6 +45,7 @@
         &--icon{
             width: 2.5rem;
             height: 2.5rem;
+            color: #fff;
         }
     }
 

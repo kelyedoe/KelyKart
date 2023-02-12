@@ -7,9 +7,8 @@
                         tous les articles <span class="formation-page__title--span">disponibles</span> 
                     </p>
                     <p class="formation-page__title--description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, alia.Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, alia.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, alia.
-
+                        La section "Tous les articles" offre une collection d'articles sur les sujets les plus pertinents de l'informatique et de la technologie. 
+                        Les articles sont écrits par des experts du secteur et couvrent des thèmes tels que les tendances actuelles, les meilleures pratiques, les astuces et astuces pour les développeurs et plus encore. 
                     </p>
                 </div>
                 <div class="formation-page__content">

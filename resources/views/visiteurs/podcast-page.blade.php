@@ -7,9 +7,8 @@
                         tous les podcasts <span class="formation-page__title--span">disponibles</span> 
                     </p>
                     <p class="formation-page__title--description">
-                        Je rencontre et je discute avec des séniors du développement web. Je vous partage gratuitement ces informations
-                        sur cette pages. Profitez et n'oubliez: vous abonnez c'est nous donner de lal force.
-
+                        La section "Tous les podcasts" offre une collection de podcasts sur le développement web et les technologies connexes. Les épisodes couvrent des sujets tels que les dernières tendances en développement web, les astuces et conseils pour les développeurs, 
+                        les entrevues avec des experts du secteur et plus encore. Cette section est idéale pour les développeurs souhaitant rester informés et continuer à apprendre en dehors de la formation formelle. 
                     </p>
                 </div>
 

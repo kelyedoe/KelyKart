@@ -332,6 +332,10 @@ body {
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
   width: 100%; }
+  .footer__icon--link:link, .footer__icon--link:active {
+    color: #fff; }
+  .footer__icon--link:hover, .footer__icon--link:visited {
+    transform: scale(1.2); }
   .footer__retrouvez {
     padding-top: 3rem;
     padding-right: 3rem;
@@ -351,7 +355,8 @@ body {
       color: #fff; }
     .footer__retrouvez--icon {
       width: 2.5rem;
-      height: 2.5rem; }
+      height: 2.5rem;
+      color: #fff; }
   .footer__contactez {
     padding-top: 3rem;
     padding-right: 3rem;
@@ -630,7 +635,7 @@ formation-page__content--link:active {
 .intro__content {
   padding-left: 3rem;
   font-size: 1.4rem;
-  color: #0D2E4B;
+  color: #0D2E4B !important;
   text-align: justify; }
 
 .section__tutoriel--text {

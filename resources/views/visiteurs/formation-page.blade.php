@@ -10,8 +10,8 @@
                         </span> 
                     </p>
                     <p class="formation-page__title--description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, alia.Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, alia.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, alia.
+                        Nous vous proposons une variété de formations pour les développeurs web de tous niveaux. Que vous soyez débutant ou expérimenté, il y a une formation pour vous aider à atteindre vos objectifs de développement. Cette section inclut des formations sur divers frameworks, technologies et outils,
+                         y compris Laravel, PHP, JavaScript, React, Vue.js et plus encore.  
                     </p>
                 </div>
                 @foreach ($formations as $formation)
