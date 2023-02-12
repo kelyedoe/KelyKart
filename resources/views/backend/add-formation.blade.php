@@ -19,7 +19,6 @@
                     <input type="number" name="total_chapitres" placeholder="Nombre de chapitres" class="backend__header--input" required>
                     <input type="number" name="total_duree" placeholder="Durée de la video" class="backend__header--input" required>
                     <input type="file" name="icon_large" placeholder="Large icon de la formation " required>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
                     <input type="submit" name="submit" class="backend__header--button">
                 </form>
             </div>

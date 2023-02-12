@@ -112,14 +112,14 @@
                 <div class="tutoriel__text--title">
                     Tutoriel {{$tutoriel->id}} : {{$tutoriel->titre}}
                 </div>
-                <div>
+                {{-- <div>
                     <div class="tutoriel__text--introduction">
                         Introduction
                     </div>
                     <p class="intro__content">
                         {{$tutoriel->description}}
                     </p> 
-                </div>
+                </div> --}}
                 
                 <div>
                    {{--  <div class="tutoriel__text--introduction">
@@ -131,14 +131,14 @@
                 </div>
                 
 
-                <div>
+                {{-- <div>
                     <div class="tutoriel__text--introduction">
                         Conclusion
                     </div>
                     <p class="intro__content">
                         {{$tutoriel->description}}
                     </p>
-                </div>
+                </div> --}}
             </div>
 
             <div class="tutoriel__details">

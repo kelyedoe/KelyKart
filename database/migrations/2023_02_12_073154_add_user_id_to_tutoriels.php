@@ -13,10 +13,11 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::table('users', function (Blueprint $table) {
-            $table->foreignId('current_team_id')
-                    ->after('remember_token')
-                    ->nullable();
+        Schema::table('tutoriels', function (Blueprint $table) {
+            $table->foreignId('user_id')
+            ->constrained()
+            ->onUpdate('cascade')
+            ->onDelete('cascade');
         });
     }
 
@@ -27,8 +28,8 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::table('users', function (Blueprint $table) {
-            $table->dropColumn('current_team_id');
+        Schema::table('tutoriels', function (Blueprint $table) {
+            //
         });
     }
 };
