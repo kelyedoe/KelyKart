@@ -34,10 +34,16 @@
                 <img src="{{asset('images/kelykart.png')}}" class="footer__contactez--logo" alt="logo footer'">
             </div> --}}
             
-            <div class="footer__contactez--header">Contactez moi</div>
-            <div class="footer__contactez--content"><p>Je vous reponds dès que possible , Merci!</p></div>
+            <div class="footer__contactez--header">A propos</div>
             <div class="footer__contactez--medias">
-                <div><a href="https://www.linkedin.com/in/edo%C3%A9-junior-agbodjan/"><ion-icon name="logo-linkedin" class="footer__retrouvez--icon"></ion-icon></a></div>
+                {{-- <div><a href="https://www.linkedin.com/in/edo%C3%A9-junior-agbodjan/"><ion-icon name="logo-linkedin" class="footer__retrouvez--icon"></ion-icon></a></div>
                 <div><a href=""><ion-icon name="mail-unread-outline" class="footer__retrouvez--icon"></ion-icon></a></div>  
-            </div>
+             </div>--}}
+             <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia vel dolores nesciunt atque, sint tempore quaerat delectus qui ipsa architecto sed, molestiae praesentium beatae, ullam dolorum quasi exercitationem cumque dignissimos.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, possimus officia veniam saepe sint rem velit eaque quisquam maxime adipisci iure. Placeat est quidem facere dolorem in possimus laudantium nihil.
+                </p>
+             </div>
+            <div class="footer__contactez--content"><p>All rights reserved &copy; 2023 by kelykart.</p></div>
+             
         </div>

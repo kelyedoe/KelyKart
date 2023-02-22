@@ -11,7 +11,7 @@
 
             <div class="tutoriel__bloc">
                 <div class="tutoriel__bloc--video">
-                    <iframe class="chapitre__video video--link" width="500" height="400px" src="https://www.youtube.com/embed/reUZRyXxUs4">
+                    <iframe class="chapitre__video video--link" width="500" height="400px" src="{{$tutoriel->video_youtube}}">
                     </iframe>
                 </div>
                 <div class="tutoriel__bloc--program">
