@@ -2,8 +2,27 @@
     @section('content')
         <div class="backend">
             <div class="backend__header">
-                <h3 class="backend__header--logo">φως καρτ</h3>
-                <p class="backend__header--text"> backend / Formations</p>
+                <div class="backend__header--description">
+                    <h3 class="backend__header--logo">φως καρτ</h3>
+                    <p class="backend__header--text"> backend / Formations</p>
+                </div>
+                <div class="backend__header--user">
+                    <div class="user__detail">
+                        <div class="detail__name">Utilisateur :</div>
+                        <div class="detail__value"> {{ Auth::user()->username; }} </div>
+                    </div>
+                    <div class="user__detail">
+                        <div class="detail__name">Email:</div>
+                        <div class="detail__value"> {{ Auth::user()->email; }} </div>
+                    </div>
+                    <div class="user__detail">
+                        <div class="detail__name"> Profession :</div>
+                        <div class="detail__value"> {{ Auth::user()->profession; }} </div>
+                    </div>
+                    
+                    {{-- <img src="{{asset('images/'. Auth::user()->username)}}" alt="Profile de l'utilisateur"> --}}
+                </div>
+                
             </div>
             {{-- <hr class="backend__header--separator"> --}}
             <a href="{{asset('backend/ajouter')}}" class="backend__add--link"><button class="backend__add--formation">Ajouter +</button></a>

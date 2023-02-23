@@ -6,6 +6,7 @@ use App\Http\Controllers\tutorielController;
 use App\Http\Controllers\podcastController;
 use App\Http\Controllers\indexController;
 use App\Models\Formation;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes

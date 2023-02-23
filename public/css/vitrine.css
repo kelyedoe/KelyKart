@@ -693,12 +693,17 @@ formation-page__content--link:active {
   text-decoration: none; }
 
 .backend__header {
-  text-align: center;
-  margin: 5rem; }
+  margin: 5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); }
+  .backend__header--user {
+    text-align: right;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #0D2E4B; }
   .backend__header--logo {
     font-size: 5rem;
-    color: #0D2E4B;
-    text-align: center; }
+    color: #0D2E4B; }
   .backend__header--text {
     color: #00B0FF;
     font-size: 2rem; }
@@ -742,6 +747,15 @@ formation-page__content--link:active {
 
 .double__col {
   grid-column: 1/3; }
+
+.user__detail {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); }
+
+.detail__name {
+  text-align: right;
+  font-size: 1.6rem;
+  color: #00B0FF; }
 
 .podcast {
   background-color: #F5F5F5;
