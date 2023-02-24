@@ -814,3 +814,44 @@ formation-page__content--link:active {
     font-size: 1.2rem;
     color: #0D2E4B;
     padding: 2rem; }
+
+.contact__title {
+  margin: 5rem; }
+  .contact__title--contact {
+    color: #0D2E4B;
+    font-weight: 700;
+    font-size: 3rem; }
+  .contact__title--description {
+    color: #0D2E4B;
+    font-size: 1.1rem; }
+  .contact__title--moi {
+    color: #00B0FF;
+    font-size: 3rem; }
+
+.contact__form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin: 5rem; }
+  .contact__form--label {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #0D2E4B; }
+  .contact__form--input {
+    width: 100%;
+    height: 4rem;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px; }
+  .contact__form--message {
+    width: 100%;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px; }
+
+.button__message {
+  border-style: none;
+  background-color: #0D2E4B;
+  text-transform: uppercase;
+  color: #fff;
+  height: 4rem;
+  width: 10rem;
+  border-radius: 3px; }

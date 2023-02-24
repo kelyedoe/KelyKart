@@ -18,6 +18,10 @@ use App\Models\Formation;
     return view('visiteurs.content');
 }); */
 
+Route::get('contactez-moi', function(){
+    return view('visiteurs.contact');
+});
+
 /*  Route index de KelyKart */
 Route::get('/', [indexController::class, 'getAll_formations']);
 
