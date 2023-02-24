@@ -68,7 +68,7 @@
             text-align: left;
         }
         &--content{
-            color: $color-tertiary-light;
+            color: $color-secondary-light;
             font-size: 1.3rem;
             text-align: left;
             font-size: 600;
@@ -85,4 +85,56 @@
     &__logo{
         text-align: center;
     }
+}
+
+.button__contact{
+   margin-top: 2rem;
+   margin-left: 1rem;
+   
+
+   &--content{
+    height: 4rem;
+    border-style: none;
+    padding: 1rem;
+    background-color: $color-secondary-light;
+    //border:  2px solid #fff;
+    border-radius: 1rem;
+    text-align: center;
+
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+
+   }
+
+   &--text{
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 600;
+
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+   }
+
+   &--text:after{
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+   }
+
+   &--content:hover,
+   &--text{
+    padding-right: 25px;
+  }
+  
+  &--content:hover,
+    &--text:after {
+    opacity: 1;
+    right: 0;
+  }
 }

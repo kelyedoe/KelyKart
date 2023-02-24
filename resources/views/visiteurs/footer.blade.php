@@ -44,6 +44,16 @@
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, possimus officia veniam saepe sint rem velit eaque quisquam maxime adipisci iure. Placeat est quidem facere dolorem in possimus laudantium nihil.
                 </p>
              </div>
+
+             
             <div class="footer__contactez--content"><p>All rights reserved &copy; 2023 by kelykart.</p></div>
              
         </div>
+
+        <div class="button__contact">
+            <a href="" class="button__contact--link">
+                <button class="button__contact--content">
+                    <div class="button__contact--text">Contactez moi</div>
+                </button>
+            </a>
+         </div>
