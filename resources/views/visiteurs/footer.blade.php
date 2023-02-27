@@ -51,7 +51,7 @@
         </div>
 
         <div class="button__contact">
-            <a href="" class="button__contact--link">
+            <a href="{{asset('contactez-moi')}}" class="button__contact--link">
                 <button class="button__contact--content">
                     <div class="button__contact--text">Contactez moi</div>
                 </button>

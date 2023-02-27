@@ -9,7 +9,7 @@
     }
     &--description{
         color: $color-primary;
-        font-size: 1.1rem;
+        font-size: 2rem;
     }
     &--moi{
         color: $color-secondary-light;
@@ -38,12 +38,18 @@
         height: 4rem;
         border: 1px solid #dcdcdc;
         border-radius: 5px;
+        padding: 1.2rem;
+        color: $color-primary;
+        font-size: 1.5rem;
     }
 
     &--message{
         width: 100%;
         border: 1px solid #dcdcdc;
         border-radius: 5px;
+        color: $color-primary;
+        font-size: 1.5rem;
+        padding: 3rem;
        
     }
 }
@@ -56,4 +62,14 @@
     height: 4rem;
     width: 10rem;
     border-radius: 3px;
+    
+}
+
+.reseaux__sociaux{
+    &--icons{
+        font-size: 2.3rem;
+        color: $color-primary;
+        padding: 3rem;
+        font-weight: 600;
+    }
 }

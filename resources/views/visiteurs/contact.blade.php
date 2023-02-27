@@ -24,7 +24,15 @@
             <textarea name=""  rows="10" id="" class="contact__form--message" ></textarea>
         </div>
 
-        <div class="reseaux__sociaux">contact via social media</div>
+        <div class="reseaux__sociaux">
+            <div class="reseaux__sociaux--icons">
+                Sur les Réseaux Sociaux
+                <hr class="reseaux__line">
+            </div>
+
+            
+            
+        </div>
       
         <div class="contact__form--button">
             <a href="">

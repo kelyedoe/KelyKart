@@ -823,7 +823,7 @@ formation-page__content--link:active {
     font-size: 3rem; }
   .contact__title--description {
     color: #0D2E4B;
-    font-size: 1.1rem; }
+    font-size: 2rem; }
   .contact__title--moi {
     color: #00B0FF;
     font-size: 3rem; }
@@ -841,11 +841,17 @@ formation-page__content--link:active {
     width: 100%;
     height: 4rem;
     border: 1px solid #dcdcdc;
-    border-radius: 5px; }
+    border-radius: 5px;
+    padding: 1.2rem;
+    color: #0D2E4B;
+    font-size: 1.5rem; }
   .contact__form--message {
     width: 100%;
     border: 1px solid #dcdcdc;
-    border-radius: 5px; }
+    border-radius: 5px;
+    color: #0D2E4B;
+    font-size: 1.5rem;
+    padding: 3rem; }
 
 .button__message {
   border-style: none;
@@ -855,3 +861,9 @@ formation-page__content--link:active {
   height: 4rem;
   width: 10rem;
   border-radius: 3px; }
+
+.reseaux__sociaux--icons {
+  font-size: 2.3rem;
+  color: #0D2E4B;
+  padding: 3rem;
+  font-weight: 600; }
