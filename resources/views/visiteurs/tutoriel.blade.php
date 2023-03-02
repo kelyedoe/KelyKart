@@ -126,7 +126,7 @@
                         Créer des groupes de routes en laravel
                     </div> --}}
                     <p class="intro__content">
-                        {!! html_entity_decode($tutoriel->content) !!}
+                        {{!! html_entity_decode($tutoriel->content) !!}}
                     </p>
                 </div>
                 

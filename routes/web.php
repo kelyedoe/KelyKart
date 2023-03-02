@@ -18,6 +18,14 @@ use App\Models\Formation;
     return view('visiteurs.content');
 }); */
 
+Route::get('test-mail', function(){
+    Mail::raw('Bonjour junior edoé', function($message){
+        $message->subject('Email de test')
+        ->to('edoeagbodjana@gmail.com');
+    });
+    return 'Ok! Le mail a été envoyé avec succès';
+});
+
 Route::get('contactez-moi', function(){
     return view('visiteurs.contact');
 });
@@ -44,42 +52,44 @@ Route::group(['prefix'=>'formations'] , function(){
 
 
 /** Groupe des routes gérés par l'administrateur de KelyKart */
-Route::group(['prefix'=>'backend'], function(){
-
-    //Routes pour ajouter une  nouvelle formation dans la DB
-    Route::get('ajouter', [formationController::class, 'show_form']);
-    Route::post('ajouter', [formationController::class, 'create_formation']);
+Route::group(['middleware' => ['auth']], function(){
+    Route::group(['prefix'=>'backend'], function(){
+        //Routes pour ajouter une  nouvelle formation dans la DB
+        Route::get('ajouter', [formationController::class, 'show_form']);
+        Route::post('ajouter', [formationController::class, 'create_formation']);
+        
+        Route::get('/', [formationController::class, 'getAll_backend']);
     
-    Route::get('/', [formationController::class, 'getAll_backend']);
-
-    //Route pour supprimer une formation de la DB
-    Route::get('supprimer/{id}', [formationController::class, 'delete']);
-
-    //Routes pour modifier les details d'une formation
-    Route::get('mettre-a-jour/{id}', [formationController::class, 'show_update_form']);
-    Route::post('mettre-a-jour/{id}', [formationController::class, 'update_formation']);
-
-    // Sous groupe de routets pour gerer les tutoriels dans la DB
-
-      //AJouter un nouveau tutoriel sous une formation
-    Route::get('ajouter-tutoriel',[tutorielController::class, 'show_form']);
-    Route::post('ajouter-tutoriel',[tutorielController::class, 'create_tutoriel']);
-      
-        // Recupérer tous les tutoriels de DB et les afficher dans le tabeau
-    Route::get('tutoriels',[tutorielController::class, 'getAll_tutoriels']); 
-
-    //Modifier les details d'un tutoriel
-    Route::get('update-tutoriel/{id}', [tutorielController::class , 'show_update_form']);
-    Route::post('update-tutoriel/{id}', [tutorielController::class, 'update_tutoriel']);
-
-    //Ajouter un podcast dans la DB
-    Route::get('ajouter-podcasts', [podcastController::class, 'show_form']);
-    Route::post('ajouter-podcasts', [podcastController::class, 'create_podcast']);
-
-     // Recupérer tous les podcasts de DB et les afficher dans le tabeau
-     Route::get('podcasts',[podcastController::class, 'getAll_podcasts']);
-
+        //Route pour supprimer une formation de la DB
+        Route::get('supprimer/{id}', [formationController::class, 'delete']);
+    
+        //Routes pour modifier les details d'une formation
+        Route::get('mettre-a-jour/{id}', [formationController::class, 'show_update_form']);
+        Route::post('mettre-a-jour/{id}', [formationController::class, 'update_formation']);
+    
+        // Sous groupe de routets pour gerer les tutoriels dans la DB
+    
+          //AJouter un nouveau tutoriel sous une formation
+        Route::get('ajouter-tutoriel',[tutorielController::class, 'show_form']);
+        Route::post('ajouter-tutoriel',[tutorielController::class, 'create_tutoriel']);
+          
+            // Recupérer tous les tutoriels de DB et les afficher dans le tabeau
+        Route::get('tutoriels',[tutorielController::class, 'getAll_tutoriels']); 
+    
+        //Modifier les details d'un tutoriel
+        Route::get('update-tutoriel/{id}', [tutorielController::class , 'show_update_form']);
+        Route::post('update-tutoriel/{id}', [tutorielController::class, 'update_tutoriel']);
+    
+        //Ajouter un podcast dans la DB
+        Route::get('ajouter-podcasts', [podcastController::class, 'show_form']);
+        Route::post('ajouter-podcasts', [podcastController::class, 'create_podcast']);
+    
+         // Recupérer tous les podcasts de DB et les afficher dans le tabeau
+         Route::get('podcasts',[podcastController::class, 'getAll_podcasts']);
+    
+    });
 });
+
 
 
 
