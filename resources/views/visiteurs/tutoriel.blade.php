@@ -108,11 +108,11 @@
 
             <div class="section__tutoriel--text">
                     
-            <div class="tutoriel__text">
+             {{-- <div class="tutoriel__text">
                 <div class="tutoriel__text--title">
                     Tutoriel {{$tutoriel->id}} : {{$tutoriel->titre}}
                 </div>
-                {{-- <div>
+               <div>
                     <div class="tutoriel__text--introduction">
                         Introduction
                     </div>
@@ -121,14 +121,14 @@
                     </p> 
                 </div> --}}
                 
-                <div>
+                {{-- <div>
                    {{--  <div class="tutoriel__text--introduction">
                         Créer des groupes de routes en laravel
-                    </div> --}}
+                    </div> 
                     <p class="intro__content">
                         {{!! html_entity_decode($tutoriel->content) !!}}
                     </p>
-                </div>
+                </div> --}}
                 
 
                 {{-- <div>
@@ -141,7 +141,7 @@
                 </div> --}}
             </div>
 
-            <div class="tutoriel__details">
+            {{-- <div class="tutoriel__details">
 
                 <hr class="tutoriel__details--line">
 
@@ -154,7 +154,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> --}}
             </div>
             
         </div>
